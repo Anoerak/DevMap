@@ -1,0 +1,17 @@
+h1 {
+	font-size: 2rem;
+}
+
+a {
+	text-decoration: none;
+	color: $color-dark;
+
+	&:hover {
+		color: $color-secondary;
+	}
+}
+
+
+ul {
+	list-style: none;
+}

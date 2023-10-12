@@ -4,9 +4,31 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#000000"/>
+		<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+		
+		<!-- FontAwesome CDN -->
+		<link href="./../node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+		
+		<!-- Plausible script for analytics-->
+		<script defer data-domain="devmap.dev" src="https://plausible.sebdevcloud.synology.me/js/script.js"></script>
+		
+		<!-- Primary Meta Tags -->
+		<title>DevMap</title>
+		<meta name="title" content="DevMap"/>
+		<meta
+		name="description" content="👋 Hey there! DevMap is an interactive map to represent where are the developer actually seeking for a position, their specialties, stack and location. It is privacy oriented meaning no registration is required, only an email which will be encrypted and used only to activate/deactivate your 'available' status."/>
+
+		<link rel="canonical" href="https://devmap.dev/" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:site_name" content="DevMap" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="627" />
+		<meta property="og:image:type" content="image/webp" />
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">
+		<div id="header"></div>
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
 </html>
