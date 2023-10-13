@@ -35,3 +35,19 @@ a map.
 -   MySQL
 
 ## Installation
+
+## Usage
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+## Contribute
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests.
+
+## Tests
+
+## Questions
+
+If you have any questions, please open an issue or contact [Anørak](https://discord.gg/JMWQyspS).
