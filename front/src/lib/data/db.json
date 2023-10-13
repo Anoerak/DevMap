@@ -1,0 +1,5987 @@
+{
+	"geojson": [
+		{
+			"type": "FeatureCollection",
+			"features": [
+				{
+					"properties": {
+						"cluster_id": 74,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Bourg-en-Bresse",
+						"speciality": "front",
+						"stack": [
+							"symfony",
+							"laravel",
+							"express",
+							"node",
+							"wordpress",
+							"php",
+							"javascript",
+							"ruby",
+							"react",
+							"rails",
+							"python",
+							"django",
+							"c",
+							"vue",
+							"react-native",
+							"java",
+							"spring",
+							"angular",
+							"html",
+							"less",
+							"c++",
+							"sass",
+							"css",
+							"go",
+							"asp.net",
+							"c#",
+							"bootstrap",
+							"foundation",
+							"bulma",
+							"ionic"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [5.241985, 46.206576]
+					},
+					"id": 1
+				},
+				{
+					"properties": {
+						"cluster_id": 28,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Villers-Cotterêts",
+						"speciality": "full",
+						"stack": [
+							"foundation",
+							"vue",
+							"symfony",
+							"rails",
+							"react",
+							"express",
+							"angular",
+							"jquery",
+							"c",
+							"laravel",
+							"asp.net",
+							"python",
+							"node",
+							"ruby",
+							"php",
+							"less",
+							"css",
+							"wordpress",
+							"bootstrap"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [3.088746, 49.250899]
+					},
+					"id": 2
+				},
+				{
+					"properties": {
+						"cluster_id": 59,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Tergnier",
+						"speciality": "back",
+						"stack": ["asp.net", "c"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [3.298927, 49.660693]
+					},
+					"id": 3
+				},
+				{
+					"properties": {
+						"cluster_id": 0,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "La Fère",
+						"speciality": "full",
+						"stack": [
+							"rails",
+							"c#",
+							"css",
+							"go",
+							"react-native",
+							"asp.net",
+							"java",
+							"html",
+							"ionic",
+							"sass",
+							"c++",
+							"vue",
+							"javascript",
+							"bootstrap",
+							"spring",
+							"django",
+							"symfony",
+							"laravel",
+							"c",
+							"bulma",
+							"wordpress"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [3.367483, 49.660994]
+					},
+					"id": 4
+				},
+				{
+					"properties": {
+						"cluster_id": 23,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Oyonnax",
+						"speciality": "full",
+						"stack": [
+							"symfony",
+							"node",
+							"rails",
+							"ruby",
+							"django",
+							"react",
+							"laravel",
+							"python",
+							"php",
+							"javascript",
+							"express",
+							"c"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [5.638998, 46.264295]
+					},
+					"id": 5
+				},
+				{
+					"properties": {
+						"cluster_id": 18,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Moulins",
+						"speciality": "full",
+						"stack": ["python", "foundation", "rails", "jquery", "wordpress", "c"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [3.327856, 46.55907]
+					},
+					"id": 6
+				},
+				{
+					"properties": {
+						"cluster_id": 8,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Montluçon",
+						"speciality": "back",
+						"stack": [
+							"rails",
+							"python",
+							"foundation",
+							"go",
+							"jquery",
+							"c",
+							"wordpress",
+							"laravel",
+							"bulma",
+							"asp.net",
+							"symfony",
+							"react-native",
+							"css",
+							"java",
+							"c#",
+							"react",
+							"javascript"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [2.605232, 46.342257]
+					},
+					"id": 7
+				},
+				{
+					"properties": {
+						"cluster_id": 67,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Ambérieu-en-Bugey",
+						"speciality": "front",
+						"stack": ["c", "wordpress", "html", "django", "node", "asp.net", "laravel", "python"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [5.365228, 45.959083]
+					},
+					"id": 8
+				},
+				{
+					"properties": {
+						"cluster_id": 1,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Valserhône",
+						"speciality": "back",
+						"stack": [
+							"foundation",
+							"c#",
+							"react",
+							"spring",
+							"bootstrap",
+							"laravel",
+							"angular",
+							"less",
+							"asp.net",
+							"express",
+							"rails",
+							"symfony",
+							"html",
+							"java",
+							"node",
+							"react-native",
+							"css",
+							"jquery",
+							"django",
+							"javascript",
+							"python",
+							"sass",
+							"ruby"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [5.804017, 46.127962]
+					},
+					"id": 9
+				},
+				{
+					"properties": {
+						"cluster_id": 88,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Vichy",
+						"speciality": "full",
+						"stack": [
+							"jquery",
+							"express",
+							"django",
+							"go",
+							"rails",
+							"python",
+							"c",
+							"c++",
+							"laravel",
+							"node",
+							"javascript",
+							"foundation",
+							"angular",
+							"wordpress",
+							"ionic",
+							"spring",
+							"ruby",
+							"php",
+							"less",
+							"html",
+							"bootstrap",
+							"c#",
+							"vue"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [3.428457, 46.130925]
+					},
+					"id": 10
+				},
+				{
+					"properties": {
+						"cluster_id": 30,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Cusset",
+						"speciality": "back",
+						"stack": [
+							"express",
+							"c",
+							"django",
+							"jquery",
+							"python",
+							"rails",
+							"c++",
+							"go",
+							"spring",
+							"node"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [3.457925, 46.137962]
+					},
+					"id": 11
+				},
+				{
+					"properties": {
+						"cluster_id": 81,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Yzeure",
+						"speciality": "back",
+						"stack": ["django", "jquery", "c", "angular", "express", "python", "rails"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [3.359841, 46.563483]
+					},
+					"id": 12
+				},
+				{
+					"properties": {
+						"cluster_id": 60,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Trévoux",
+						"speciality": "full",
+						"stack": [
+							"html",
+							"javascript",
+							"foundation",
+							"c",
+							"wordpress",
+							"django",
+							"symfony",
+							"node",
+							"ionic",
+							"laravel",
+							"asp.net",
+							"rails",
+							"react",
+							"ruby",
+							"python"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [4.774112, 45.942379]
+					},
+					"id": 13
+				},
+				{
+					"properties": {
+						"cluster_id": 16,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Saint-Pourçain-sur-Sioule",
+						"speciality": "back",
+						"stack": [
+							"css",
+							"jquery",
+							"react",
+							"java",
+							"sass",
+							"less",
+							"express",
+							"asp.net",
+							"html",
+							"ruby",
+							"angular",
+							"django",
+							"c",
+							"spring",
+							"react-native",
+							"symfony",
+							"bulma",
+							"vue",
+							"bootstrap",
+							"php",
+							"c#",
+							"rails"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [3.304564, 46.31158]
+					},
+					"id": 14
+				},
+				{
+					"properties": {
+						"cluster_id": 60,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Commentry",
+						"speciality": "full",
+						"stack": ["jquery", "sass", "css", "less"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [2.749455, 46.274736]
+					},
+					"id": 15
+				},
+				{
+					"properties": {
+						"cluster_id": 80,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Belley",
+						"speciality": "full",
+						"stack": [
+							"foundation",
+							"laravel",
+							"php",
+							"react",
+							"c#",
+							"c++",
+							"css",
+							"go",
+							"bootstrap",
+							"spring",
+							"angular",
+							"less",
+							"vue",
+							"sass",
+							"express",
+							"bulma",
+							"asp.net",
+							"ionic",
+							"rails",
+							"wordpress",
+							"symfony",
+							"python"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [5.688373, 45.754371]
+					},
+					"id": 16
+				},
+				{
+					"properties": {
+						"cluster_id": 39,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Miribel",
+						"speciality": "front",
+						"stack": [
+							"express",
+							"c",
+							"go",
+							"c#",
+							"spring",
+							"react-native",
+							"bulma",
+							"javascript",
+							"php",
+							"foundation",
+							"css",
+							"html",
+							"bootstrap"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [4.94851, 45.835286]
+					},
+					"id": 17
+				},
+				{
+					"properties": {
+						"cluster_id": 25,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Châtillon-sur-Chalaronne",
+						"speciality": "front",
+						"stack": ["c", "django", "asp.net", "node", "python", "javascript"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [4.95847, 46.128374]
+					},
+					"id": 18
+				},
+				{
+					"properties": {
+						"cluster_id": 14,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Bellerive-sur-Allier",
+						"speciality": "back",
+						"stack": [
+							"css",
+							"c#",
+							"php",
+							"sass",
+							"jquery",
+							"less",
+							"express",
+							"java",
+							"asp.net",
+							"react",
+							"python",
+							"bootstrap",
+							"ruby",
+							"bulma",
+							"vue",
+							"django",
+							"go",
+							"rails",
+							"javascript",
+							"ionic",
+							"foundation",
+							"node",
+							"wordpress",
+							"c++",
+							"laravel",
+							"angular",
+							"html",
+							"react-native",
+							"c",
+							"spring"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [3.40618, 46.120712]
+					},
+					"id": 19
+				},
+				{
+					"properties": {
+						"cluster_id": 16,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Gannat",
+						"speciality": "back",
+						"stack": [
+							"php",
+							"express",
+							"go",
+							"less",
+							"rails",
+							"java",
+							"c#",
+							"sass",
+							"jquery",
+							"css",
+							"javascript",
+							"python",
+							"ionic",
+							"c++",
+							"react",
+							"vue",
+							"ruby",
+							"foundation",
+							"bulma",
+							"asp.net",
+							"django",
+							"node",
+							"wordpress",
+							"spring",
+							"laravel",
+							"html",
+							"bootstrap",
+							"c",
+							"symfony"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [3.179027, 46.097804]
+					},
+					"id": 20
+				},
+				{
+					"properties": {
+						"cluster_id": 40,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Digne-les-Bains",
+						"speciality": "front",
+						"stack": [
+							"php",
+							"go",
+							"express",
+							"less",
+							"rails",
+							"java",
+							"sass",
+							"c#",
+							"jquery",
+							"css",
+							"javascript",
+							"python",
+							"c++",
+							"ionic",
+							"vue",
+							"react",
+							"ruby",
+							"node",
+							"foundation",
+							"bulma",
+							"spring",
+							"django",
+							"wordpress",
+							"asp.net"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [6.242589, 44.089291]
+					},
+					"id": 21
+				},
+				{
+					"properties": {
+						"cluster_id": 2,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Manosque",
+						"speciality": "back",
+						"stack": [
+							"laravel",
+							"java",
+							"ionic",
+							"ruby",
+							"go",
+							"symfony",
+							"c++",
+							"react-native",
+							"node",
+							"javascript",
+							"rails",
+							"sass",
+							"angular"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [5.784052, 43.825445]
+					},
+					"id": 22
+				},
+				{
+					"properties": {
+						"cluster_id": 65,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Sisteron",
+						"speciality": "front",
+						"stack": [
+							"html",
+							"laravel",
+							"spring",
+							"java",
+							"css",
+							"rails",
+							"javascript",
+							"sass",
+							"ionic",
+							"express",
+							"react",
+							"vue",
+							"node",
+							"less",
+							"jquery",
+							"asp.net",
+							"bootstrap",
+							"ruby",
+							"php",
+							"angular"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [5.935608, 44.20371]
+					},
+					"id": 23
+				},
+				{
+					"properties": {
+						"cluster_id": 72,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Oraison",
+						"speciality": "back",
+						"stack": [
+							"laravel",
+							"java",
+							"ruby",
+							"spring",
+							"css",
+							"symfony",
+							"react",
+							"c",
+							"angular",
+							"node"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [5.914902, 43.902421]
+					},
+					"id": 24
+				},
+				{
+					"properties": {
+						"cluster_id": 64,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Gréoux-les-Bains",
+						"speciality": "back",
+						"stack": ["react", "symfony", "ruby", "bootstrap", "foundation"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [5.851758, 43.746535]
+					},
+					"id": 25
+				},
+				{
+					"properties": {
+						"cluster_id": 82,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Forcalquier",
+						"speciality": "back",
+						"stack": [
+							"node",
+							"react",
+							"spring",
+							"rails",
+							"ionic",
+							"less",
+							"vue",
+							"css",
+							"laravel",
+							"sass",
+							"express",
+							"javascript",
+							"html",
+							"jquery",
+							"asp.net",
+							"java",
+							"angular",
+							"ruby",
+							"django",
+							"bootstrap",
+							"php",
+							"c",
+							"go",
+							"c++"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [5.789835, 43.952274]
+					},
+					"id": 26
+				},
+				{
+					"properties": {
+						"cluster_id": 29,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Barcelonnette",
+						"speciality": "full",
+						"stack": ["react", "spring", "node"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [6.647318, 44.387029]
+					},
+					"id": 27
+				},
+				{
+					"properties": {
+						"cluster_id": 25,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Riez",
+						"speciality": "front",
+						"stack": ["c", "react"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [6.083039, 43.818198]
+					},
+					"id": 28
+				},
+				{
+					"properties": {
+						"cluster_id": 40,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Montfort",
+						"speciality": "back",
+						"stack": [
+							"css",
+							"c",
+							"spring",
+							"java",
+							"laravel",
+							"ruby",
+							"symfony",
+							"react",
+							"bulma",
+							"less",
+							"jquery",
+							"express",
+							"sass",
+							"node",
+							"javascript",
+							"angular",
+							"rails"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [5.943217, 44.051672]
+					},
+					"id": 29
+				},
+				{
+					"properties": {
+						"cluster_id": 87,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Gap",
+						"speciality": "front",
+						"stack": ["symfony", "ruby", "bootstrap", "react", "foundation", "django"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [6.077989, 44.544606]
+					},
+					"id": 30
+				},
+				{
+					"properties": {
+						"cluster_id": 6,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Briançon",
+						"speciality": "back",
+						"stack": ["c++", "node", "wordpress", "react-native"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [6.637472, 44.896187]
+					},
+					"id": 31
+				},
+				{
+					"properties": {
+						"cluster_id": 28,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Embrun",
+						"speciality": "full",
+						"stack": [
+							"django",
+							"bootstrap",
+							"node",
+							"ruby",
+							"foundation",
+							"css",
+							"c++",
+							"symfony",
+							"ionic",
+							"rails",
+							"html",
+							"react",
+							"c#",
+							"bulma",
+							"react-native"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [6.484718, 44.568046]
+					},
+					"id": 32
+				},
+				{
+					"properties": {
+						"cluster_id": 94,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Laragne-Montéglin",
+						"speciality": "full",
+						"stack": [
+							"bootstrap",
+							"django",
+							"node",
+							"ruby",
+							"css",
+							"foundation",
+							"c++",
+							"symfony",
+							"html",
+							"rails",
+							"bulma",
+							"ionic",
+							"react",
+							"c#",
+							"react-native",
+							"wordpress",
+							"go",
+							"vue",
+							"express",
+							"python",
+							"javascript",
+							"c",
+							"java",
+							"angular",
+							"laravel",
+							"spring",
+							"jquery",
+							"less",
+							"php",
+							"asp.net"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [5.824603, 44.319256]
+					},
+					"id": 33
+				},
+				{
+					"properties": {
+						"cluster_id": 3,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Veynes",
+						"speciality": "back",
+						"stack": [
+							"django",
+							"react",
+							"express",
+							"go",
+							"html",
+							"vue",
+							"foundation",
+							"rails",
+							"python",
+							"javascript",
+							"c",
+							"c#",
+							"java",
+							"angular",
+							"react-native",
+							"wordpress",
+							"sass",
+							"laravel",
+							"css",
+							"bulma",
+							"jquery",
+							"spring",
+							"less"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [5.833089, 44.551832]
+					},
+					"id": 34
+				},
+				{
+					"properties": {
+						"cluster_id": 19,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Saint-Bonnet-en-Champsaur",
+						"speciality": "back",
+						"stack": [
+							"c++",
+							"python",
+							"c",
+							"html",
+							"css",
+							"javascript",
+							"symfony",
+							"sass",
+							"foundation",
+							"php",
+							"react",
+							"bulma",
+							"django",
+							"ionic",
+							"laravel",
+							"jquery",
+							"bootstrap",
+							"c#",
+							"java",
+							"angular",
+							"ruby",
+							"node",
+							"react-native",
+							"wordpress",
+							"spring",
+							"less",
+							"asp.net",
+							"vue"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [6.091089, 44.688163]
+					},
+					"id": 35
+				},
+				{
+					"properties": {
+						"cluster_id": 23,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Meximieux",
+						"speciality": "back",
+						"stack": [
+							"css",
+							"express",
+							"c#",
+							"foundation",
+							"spring",
+							"html",
+							"react-native",
+							"javascript",
+							"go",
+							"php",
+							"c",
+							"bulma",
+							"sass",
+							"bootstrap",
+							"node",
+							"less",
+							"java",
+							"symfony",
+							"angular",
+							"vue",
+							"c++",
+							"ionic",
+							"wordpress",
+							"django"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [5.198642, 45.904706]
+					},
+					"id": 36
+				},
+				{
+					"properties": {
+						"cluster_id": 95,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Guillestre",
+						"speciality": "front",
+						"stack": [
+							"css",
+							"symfony",
+							"c++",
+							"sass",
+							"javascript",
+							"c",
+							"python",
+							"html",
+							"php",
+							"react",
+							"foundation",
+							"bulma",
+							"ionic",
+							"django",
+							"jquery",
+							"laravel",
+							"wordpress",
+							"bootstrap",
+							"java"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [6.64281, 44.661765]
+					},
+					"id": 37
+				},
+				{
+					"properties": {
+						"cluster_id": 73,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Serres",
+						"speciality": "back",
+						"stack": [
+							"php",
+							"symfony",
+							"css",
+							"sass",
+							"react",
+							"c++",
+							"python",
+							"bulma",
+							"javascript",
+							"foundation",
+							"jquery",
+							"ionic",
+							"c",
+							"laravel",
+							"html",
+							"django",
+							"go",
+							"less",
+							"express"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [5.714548, 44.421403]
+					},
+					"id": 38
+				},
+				{
+					"properties": {
+						"cluster_id": 62,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Saint-Firmin",
+						"speciality": "back",
+						"stack": [
+							"css",
+							"symfony",
+							"php",
+							"sass",
+							"go",
+							"less",
+							"python",
+							"react",
+							"c++",
+							"express",
+							"bulma",
+							"laravel",
+							"ionic",
+							"html",
+							"vue",
+							"jquery",
+							"c",
+							"javascript"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [6.023525, 44.788202]
+					},
+					"id": 39
+				},
+				{
+					"properties": {
+						"cluster_id": 29,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Laon",
+						"speciality": "full",
+						"stack": [
+							"spring",
+							"angular",
+							"java",
+							"javascript",
+							"symfony",
+							"vue",
+							"react-native",
+							"html",
+							"c#",
+							"django",
+							"wordpress"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [3.615286, 49.5704]
+					},
+					"id": 40
+				},
+				{
+					"properties": {
+						"cluster_id": 64,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Nice",
+						"speciality": "back",
+						"stack": [
+							"foundation",
+							"html",
+							"django",
+							"less",
+							"go",
+							"vue",
+							"ionic",
+							"c",
+							"javascript",
+							"c++",
+							"bootstrap",
+							"wordpress",
+							"angular"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [7.250987, 43.713012]
+					},
+					"id": 41
+				},
+				{
+					"properties": {
+						"cluster_id": 88,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Jarnac",
+						"speciality": "full",
+						"stack": [
+							"asp.net",
+							"rails",
+							"java",
+							"angular",
+							"python",
+							"bootstrap",
+							"react-native",
+							"go",
+							"javascript",
+							"react",
+							"foundation",
+							"c#",
+							"less",
+							"ruby",
+							"laravel",
+							"wordpress",
+							"c++",
+							"node",
+							"symfony"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [-0.169285, 45.690183]
+					},
+					"id": 42
+				},
+				{
+					"properties": {
+						"cluster_id": 99,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Barbezieux-Saint-Hilaire",
+						"speciality": "back",
+						"stack": [
+							"asp.net",
+							"bootstrap",
+							"python",
+							"react-native",
+							"rails",
+							"java",
+							"go",
+							"angular",
+							"ruby",
+							"react",
+							"foundation",
+							"less",
+							"javascript",
+							"wordpress",
+							"c#",
+							"laravel",
+							"symfony",
+							"node",
+							"c++",
+							"sass",
+							"jquery",
+							"spring",
+							"express",
+							"html"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [-0.156139, 45.479903]
+					},
+					"id": 43
+				},
+				{
+					"properties": {
+						"cluster_id": 71,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Confolens",
+						"speciality": "front",
+						"stack": [
+							"foundation",
+							"ruby",
+							"javascript",
+							"django",
+							"css",
+							"react-native",
+							"php",
+							"wordpress",
+							"bootstrap",
+							"python",
+							"asp.net",
+							"vue",
+							"bulma",
+							"laravel",
+							"c",
+							"ionic",
+							"c#",
+							"c++",
+							"rails",
+							"symfony",
+							"less",
+							"sass",
+							"go",
+							"java",
+							"node",
+							"html",
+							"express"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [0.663175, 46.027128]
+					},
+					"id": 44
+				},
+				{
+					"properties": {
+						"cluster_id": 88,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Soyaux",
+						"speciality": "front",
+						"stack": [
+							"bulma",
+							"java",
+							"react",
+							"vue",
+							"spring",
+							"asp.net",
+							"javascript",
+							"html",
+							"python"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [0.198152, 45.639166]
+					},
+					"id": 45
+				},
+				{
+					"properties": {
+						"cluster_id": 35,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "La Rochelle",
+						"speciality": "full",
+						"stack": [
+							"sass",
+							"less",
+							"python",
+							"php",
+							"jquery",
+							"node",
+							"java",
+							"react",
+							"bulma",
+							"django",
+							"symfony",
+							"ionic",
+							"ruby",
+							"c",
+							"wordpress",
+							"bootstrap",
+							"css",
+							"react-native"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [-1.171305, 46.158141]
+					},
+					"id": 46
+				},
+				{
+					"properties": {
+						"cluster_id": 83,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "La Couronne",
+						"speciality": "full",
+						"stack": [
+							"bootstrap",
+							"python",
+							"asp.net",
+							"react-native",
+							"java",
+							"rails",
+							"go",
+							"angular",
+							"ruby",
+							"react",
+							"javascript",
+							"wordpress",
+							"foundation",
+							"laravel",
+							"c#",
+							"less",
+							"jquery",
+							"spring",
+							"node",
+							"express",
+							"symfony",
+							"c++",
+							"sass"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [0.108005, 45.609479]
+					},
+					"id": 47
+				},
+				{
+					"properties": {
+						"cluster_id": 69,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Ruelle-sur-Touvre",
+						"speciality": "back",
+						"stack": [
+							"bulma",
+							"python",
+							"c",
+							"django",
+							"foundation",
+							"laravel",
+							"bootstrap",
+							"ionic",
+							"vue",
+							"javascript",
+							"asp.net",
+							"ruby",
+							"react-native",
+							"wordpress",
+							"css",
+							"php",
+							"express",
+							"html"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [0.225137, 45.682476]
+					},
+					"id": 48
+				},
+				{
+					"properties": {
+						"cluster_id": 82,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Saintes",
+						"speciality": "full",
+						"stack": ["django", "bulma", "ionic", "symfony"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [-0.647217, 45.748804]
+					},
+					"id": 49
+				},
+				{
+					"properties": {
+						"cluster_id": 31,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Audincourt",
+						"speciality": "back",
+						"stack": [
+							"react",
+							"c#",
+							"c",
+							"angular",
+							"html",
+							"rails",
+							"spring",
+							"jquery",
+							"asp.net",
+							"django",
+							"symfony",
+							"less",
+							"javascript",
+							"wordpress"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [6.846659, 47.479572]
+					},
+					"id": 50
+				},
+				{
+					"properties": {
+						"cluster_id": 79,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Morteau",
+						"speciality": "front",
+						"stack": [
+							"symfony",
+							"html",
+							"asp.net",
+							"django",
+							"rails",
+							"jquery",
+							"c",
+							"spring",
+							"less",
+							"wordpress",
+							"javascript",
+							"ruby",
+							"c#"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [6.599087, 47.05262]
+					},
+					"id": 51
+				},
+				{
+					"properties": {
+						"cluster_id": 99,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Sochaux",
+						"speciality": "back",
+						"stack": [
+							"django",
+							"symfony",
+							"asp.net",
+							"html",
+							"spring",
+							"jquery",
+							"c",
+							"rails",
+							"wordpress",
+							"javascript",
+							"less",
+							"ruby",
+							"react",
+							"angular",
+							"c#",
+							"foundation",
+							"go",
+							"laravel",
+							"vue",
+							"java",
+							"ionic",
+							"node",
+							"bootstrap",
+							"sass",
+							"css",
+							"python",
+							"php"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [6.828345, 47.515475]
+					},
+					"id": 52
+				},
+				{
+					"properties": {
+						"cluster_id": 69,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Valentigney",
+						"speciality": "back",
+						"stack": [
+							"angular",
+							"go",
+							"sass",
+							"asp.net",
+							"bootstrap",
+							"ionic",
+							"react",
+							"node",
+							"django",
+							"wordpress",
+							"javascript",
+							"vue",
+							"java",
+							"laravel",
+							"react-native"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [6.829693, 47.46595]
+					},
+					"id": 53
+				},
+				{
+					"properties": {
+						"cluster_id": 4,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Romans-sur-Isère",
+						"speciality": "back",
+						"stack": ["bulma", "java"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [5.046324, 45.058453]
+					},
+					"id": 54
+				},
+				{
+					"properties": {
+						"cluster_id": 93,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Valdahon",
+						"speciality": "front",
+						"stack": ["angular", "sass", "asp.net"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [6.335886, 47.148802]
+					},
+					"id": 55
+				},
+				{
+					"properties": {
+						"cluster_id": 17,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Montélimar",
+						"speciality": "back",
+						"stack": [
+							"python",
+							"c++",
+							"html",
+							"rails",
+							"angular",
+							"express",
+							"ruby",
+							"asp.net",
+							"c",
+							"java",
+							"spring",
+							"bulma",
+							"javascript",
+							"laravel",
+							"foundation",
+							"less",
+							"jquery",
+							"node",
+							"django",
+							"vue",
+							"go",
+							"sass"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [4.745639, 44.553424]
+					},
+					"id": 56
+				},
+				{
+					"properties": {
+						"cluster_id": 84,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Valence",
+						"speciality": "back",
+						"stack": [
+							"angular",
+							"sass",
+							"asp.net",
+							"go",
+							"node",
+							"react",
+							"ionic",
+							"bootstrap",
+							"java",
+							"laravel",
+							"wordpress",
+							"react-native",
+							"django",
+							"javascript",
+							"vue",
+							"symfony",
+							"python",
+							"jquery"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [4.923011, 44.921313]
+					},
+					"id": 57
+				},
+				{
+					"properties": {
+						"cluster_id": 98,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Bourg-de-Péage",
+						"speciality": "back",
+						"stack": [
+							"java",
+							"jquery",
+							"python",
+							"express",
+							"django",
+							"c",
+							"node",
+							"spring",
+							"vue",
+							"go",
+							"sass"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [5.050547, 45.022204]
+					},
+					"id": 58
+				},
+				{
+					"properties": {
+						"cluster_id": 21,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Crest",
+						"speciality": "front",
+						"stack": [
+							"go",
+							"asp.net",
+							"jquery",
+							"php",
+							"sass",
+							"bulma",
+							"python",
+							"c++",
+							"vue",
+							"html",
+							"javascript",
+							"java",
+							"c#",
+							"symfony",
+							"ruby",
+							"wordpress"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [5.015718, 44.728454]
+					},
+					"id": 59
+				},
+				{
+					"properties": {
+						"cluster_id": 0,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Portes-lès-Valence",
+						"speciality": "full",
+						"stack": [
+							"ionic",
+							"javascript",
+							"python",
+							"c++",
+							"sass",
+							"c#",
+							"ruby",
+							"java",
+							"less",
+							"foundation",
+							"react-native",
+							"bootstrap",
+							"jquery",
+							"html",
+							"wordpress",
+							"go",
+							"react",
+							"angular",
+							"spring",
+							"vue",
+							"node",
+							"css"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [4.884414, 44.876622]
+					},
+					"id": 60
+				},
+				{
+					"properties": {
+						"cluster_id": 63,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Pont-Audemer",
+						"speciality": "front",
+						"stack": ["node", "c#", "asp.net"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [0.526847, 49.348034]
+					},
+					"id": 61
+				},
+				{
+					"properties": {
+						"cluster_id": 74,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Val-de-Reuil",
+						"speciality": "front",
+						"stack": ["wordpress", "foundation"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [1.20933, 49.261533]
+					},
+					"id": 62
+				},
+				{
+					"properties": {
+						"cluster_id": 78,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Gaillon",
+						"speciality": "back",
+						"stack": [
+							"foundation",
+							"asp.net",
+							"symfony",
+							"go",
+							"javascript",
+							"c",
+							"django",
+							"jquery"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [1.343799, 49.158618]
+					},
+					"id": 63
+				},
+				{
+					"properties": {
+						"cluster_id": 80,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Évreux",
+						"speciality": "full",
+						"stack": [
+							"foundation",
+							"less",
+							"javascript",
+							"ionic",
+							"react-native",
+							"bootstrap",
+							"python",
+							"wordpress",
+							"html",
+							"go",
+							"c++",
+							"jquery",
+							"c#",
+							"sass",
+							"ruby",
+							"java",
+							"symfony",
+							"react",
+							"asp.net",
+							"css",
+							"php",
+							"bulma"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [1.146898, 49.020599]
+					},
+					"id": 64
+				},
+				{
+					"properties": {
+						"cluster_id": 21,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Brionne",
+						"speciality": "full",
+						"stack": ["spring", "react", "foundation"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [0.71394, 49.186367]
+					},
+					"id": 65
+				},
+				{
+					"properties": {
+						"cluster_id": 8,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Les Andelys",
+						"speciality": "back",
+						"stack": ["angular", "foundation", "go", "asp.net"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [1.42127, 49.245779]
+					},
+					"id": 66
+				},
+				{
+					"properties": {
+						"cluster_id": 23,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Vernon",
+						"speciality": "front",
+						"stack": []
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [1.494472, 49.089623]
+					},
+					"id": 67
+				},
+				{
+					"properties": {
+						"cluster_id": 86,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Dreux",
+						"speciality": "full",
+						"stack": [
+							"javascript",
+							"css",
+							"laravel",
+							"rails",
+							"go",
+							"c",
+							"java",
+							"vue",
+							"foundation",
+							"react-native",
+							"express",
+							"bulma",
+							"django",
+							"less",
+							"spring",
+							"c++",
+							"sass",
+							"c#",
+							"symfony"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [1.36554, 48.745749]
+					},
+					"id": 68
+				},
+				{
+					"properties": {
+						"cluster_id": 44,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Châteaudun",
+						"speciality": "full",
+						"stack": [
+							"rails",
+							"css",
+							"laravel",
+							"javascript",
+							"vue",
+							"go",
+							"c",
+							"java",
+							"react-native",
+							"express"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [1.321879, 48.075108]
+					},
+					"id": 69
+				},
+				{
+					"properties": {
+						"cluster_id": 3,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Chartres",
+						"speciality": "back",
+						"stack": [
+							"css",
+							"rails",
+							"laravel",
+							"go",
+							"express",
+							"bulma",
+							"react-native",
+							"java",
+							"less",
+							"sass"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [1.502286, 48.446525]
+					},
+					"id": 70
+				},
+				{
+					"properties": {
+						"cluster_id": 29,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Bernay",
+						"speciality": "front",
+						"stack": ["css"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [0.595349, 49.089442]
+					},
+					"id": 71
+				},
+				{
+					"properties": {
+						"cluster_id": 22,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Nogent-le-Rotrou",
+						"speciality": "back",
+						"stack": [
+							"foundation",
+							"django",
+							"express",
+							"asp.net",
+							"laravel",
+							"rails",
+							"spring",
+							"vue",
+							"ionic",
+							"php",
+							"bootstrap",
+							"react-native",
+							"java",
+							"css",
+							"node",
+							"html",
+							"ruby",
+							"javascript",
+							"c",
+							"go",
+							"c++",
+							"sass",
+							"less",
+							"wordpress",
+							"angular",
+							"symfony",
+							"c#",
+							"jquery"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [0.808165, 48.317471]
+					},
+					"id": 72
+				},
+				{
+					"properties": {
+						"cluster_id": 9,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Vernouillet",
+						"speciality": "full",
+						"stack": ["foundation", "asp.net", "c", "c++", "django", "express", "wordpress", "less"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [1.356113, 48.720484]
+					},
+					"id": 73
+				},
+				{
+					"properties": {
+						"cluster_id": 66,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Luisant",
+						"speciality": "back",
+						"stack": [
+							"django",
+							"c",
+							"express",
+							"ruby",
+							"javascript",
+							"wordpress",
+							"foundation",
+							"asp.net",
+							"c++",
+							"less",
+							"go",
+							"spring",
+							"react-native",
+							"ionic"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [1.466018, 48.426444]
+					},
+					"id": 74
+				},
+				{
+					"properties": {
+						"cluster_id": 18,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Mainvilliers",
+						"speciality": "back",
+						"stack": ["asp.net", "css", "html", "ionic", "express"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [1.456075, 48.457874]
+					},
+					"id": 75
+				},
+				{
+					"properties": {
+						"cluster_id": 62,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Louviers",
+						"speciality": "full",
+						"stack": ["c", "less", "bulma", "bootstrap", "wordpress"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [1.158223, 49.216072]
+					},
+					"id": 76
+				},
+				{
+					"properties": {
+						"cluster_id": 9,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Bonneval",
+						"speciality": "back",
+						"stack": ["ruby", "c"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [1.391697, 48.178743]
+					},
+					"id": 77
+				},
+				{
+					"properties": {
+						"cluster_id": 84,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Quimper",
+						"speciality": "back",
+						"stack": [
+							"sass",
+							"asp.net",
+							"c++",
+							"bulma",
+							"react-native",
+							"go",
+							"spring",
+							"wordpress",
+							"symfony",
+							"c#",
+							"javascript",
+							"jquery",
+							"vue",
+							"html",
+							"react",
+							"ionic",
+							"less",
+							"css",
+							"laravel",
+							"angular",
+							"c",
+							"ruby",
+							"express",
+							"php",
+							"django",
+							"foundation"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [-4.093145, 47.998749]
+					},
+					"id": 78
+				},
+				{
+					"properties": {
+						"cluster_id": 75,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Douarnenez",
+						"speciality": "full",
+						"stack": [
+							"symfony",
+							"react-native",
+							"javascript",
+							"c#",
+							"jquery",
+							"react",
+							"spring",
+							"wordpress",
+							"go",
+							"ionic",
+							"asp.net",
+							"c++",
+							"html",
+							"sass",
+							"bulma",
+							"vue",
+							"css",
+							"less",
+							"angular",
+							"bootstrap",
+							"java",
+							"laravel",
+							"python"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [-4.325157, 48.082744]
+					},
+					"id": 79
+				},
+				{
+					"properties": {
+						"cluster_id": 74,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Auneau-Bleury-Saint-Symphorien",
+						"speciality": "back",
+						"stack": [
+							"c",
+							"bootstrap",
+							"ruby",
+							"angular",
+							"node",
+							"django",
+							"rails",
+							"java",
+							"php",
+							"express",
+							"foundation",
+							"python",
+							"c#",
+							"wordpress",
+							"jquery",
+							"react",
+							"javascript"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [1.762448, 48.504259]
+					},
+					"id": 80
+				},
+				{
+					"properties": {
+						"cluster_id": 18,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Landivisiau",
+						"speciality": "front",
+						"stack": ["bulma", "python", "asp.net"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [-4.05892, 48.513537]
+					},
+					"id": 81
+				},
+				{
+					"properties": {
+						"cluster_id": 71,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Ergué-Gabéric",
+						"speciality": "front",
+						"stack": [
+							"css",
+							"bulma",
+							"asp.net",
+							"symfony",
+							"foundation",
+							"python",
+							"react-native",
+							"angular",
+							"django",
+							"php",
+							"c#",
+							"c",
+							"html",
+							"less",
+							"sass",
+							"ruby",
+							"c++"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [-4.010617, 48.00655]
+					},
+					"id": 82
+				},
+				{
+					"properties": {
+						"cluster_id": 55,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Morlaix",
+						"speciality": "front",
+						"stack": [
+							"symfony",
+							"bulma",
+							"css",
+							"asp.net",
+							"foundation",
+							"react-native",
+							"angular",
+							"python",
+							"html",
+							"less",
+							"sass",
+							"django",
+							"c",
+							"php",
+							"c#",
+							"ruby",
+							"rails",
+							"express"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [-3.820202, 48.595154]
+					},
+					"id": 83
+				},
+				{
+					"properties": {
+						"cluster_id": 93,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Pluguffan",
+						"speciality": "back",
+						"stack": [
+							"asp.net",
+							"symfony",
+							"bulma",
+							"css",
+							"python",
+							"foundation",
+							"react-native",
+							"angular",
+							"html",
+							"less",
+							"django",
+							"sass",
+							"ruby",
+							"php",
+							"c#",
+							"c"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [-4.180857, 47.969143]
+					},
+					"id": 84
+				},
+				{
+					"properties": {
+						"cluster_id": 17,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Brest",
+						"speciality": "front",
+						"stack": [
+							"react-native",
+							"symfony",
+							"css",
+							"c#",
+							"less",
+							"foundation",
+							"javascript",
+							"php",
+							"express",
+							"angular",
+							"spring",
+							"java",
+							"react",
+							"wordpress",
+							"jquery",
+							"rails",
+							"go",
+							"c++",
+							"ionic",
+							"bootstrap",
+							"laravel",
+							"asp.net",
+							"c",
+							"node",
+							"bulma",
+							"python",
+							"html",
+							"django",
+							"ruby",
+							"sass"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [-4.497736, 48.406435]
+					},
+					"id": 85
+				},
+				{
+					"properties": {
+						"cluster_id": 34,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Quimperlé",
+						"speciality": "back",
+						"stack": [
+							"foundation",
+							"symfony",
+							"react-native",
+							"css",
+							"bulma",
+							"python",
+							"asp.net",
+							"angular",
+							"c",
+							"c#",
+							"php",
+							"django",
+							"html",
+							"less",
+							"sass",
+							"ruby",
+							"express",
+							"laravel",
+							"javascript",
+							"go",
+							"vue",
+							"c++",
+							"spring",
+							"java",
+							"ionic",
+							"node",
+							"react",
+							"wordpress",
+							"bootstrap"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [-3.552977, 47.861426]
+					},
+					"id": 86
+				},
+				{
+					"properties": {
+						"cluster_id": 49,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Landerneau",
+						"speciality": "full",
+						"stack": [
+							"react",
+							"spring",
+							"html",
+							"java",
+							"ruby",
+							"go",
+							"php",
+							"c++",
+							"javascript",
+							"vue",
+							"less",
+							"bootstrap",
+							"wordpress",
+							"c#",
+							"jquery",
+							"python",
+							"symfony",
+							"rails",
+							"laravel"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [-4.26042, 48.450764]
+					},
+					"id": 87
+				},
+				{
+					"properties": {
+						"cluster_id": 69,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Concarneau",
+						"speciality": "back",
+						"stack": ["java", "ionic", "foundation", "css", "symfony"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [-3.896018, 47.891735]
+					},
+					"id": 88
+				},
+				{
+					"properties": {
+						"cluster_id": 96,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Nîmes",
+						"speciality": "front",
+						"stack": [
+							"bootstrap",
+							"foundation",
+							"spring",
+							"rails",
+							"symfony",
+							"java",
+							"javascript",
+							"jquery"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [4.356289, 43.814652]
+					},
+					"id": 89
+				},
+				{
+					"properties": {
+						"cluster_id": 34,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Bagnols-sur-Cèze",
+						"speciality": "full",
+						"stack": [
+							"vue",
+							"javascript",
+							"bootstrap",
+							"asp.net",
+							"symfony",
+							"css",
+							"java",
+							"rails",
+							"jquery",
+							"c",
+							"foundation",
+							"wordpress",
+							"python",
+							"bulma",
+							"ionic",
+							"spring",
+							"sass",
+							"laravel",
+							"django",
+							"angular",
+							"react-native",
+							"php",
+							"less",
+							"node",
+							"ruby",
+							"c#",
+							"go",
+							"express",
+							"react",
+							"c++"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [4.624846, 44.158589]
+					},
+					"id": 90
+				},
+				{
+					"properties": {
+						"cluster_id": 70,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Alès",
+						"speciality": "full",
+						"stack": [
+							"bootstrap",
+							"asp.net",
+							"symfony",
+							"css",
+							"rails",
+							"javascript",
+							"foundation",
+							"wordpress",
+							"ionic",
+							"python",
+							"spring",
+							"bulma",
+							"jquery",
+							"java",
+							"vue",
+							"c",
+							"angular"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [4.089292, 44.125446]
+					},
+					"id": 91
+				},
+				{
+					"properties": {
+						"cluster_id": 10,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Beaucaire",
+						"speciality": "full",
+						"stack": [
+							"ruby",
+							"vue",
+							"html",
+							"react-native",
+							"javascript",
+							"bootstrap",
+							"c#",
+							"react",
+							"asp.net",
+							"c++",
+							"php",
+							"less",
+							"java",
+							"css",
+							"rails",
+							"go",
+							"symfony",
+							"wordpress",
+							"foundation",
+							"laravel",
+							"c",
+							"express",
+							"bulma",
+							"ionic",
+							"jquery",
+							"spring"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [4.590115, 43.777956]
+					},
+					"id": 92
+				},
+				{
+					"properties": {
+						"cluster_id": 15,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Villeneuve-lès-Avignon",
+						"speciality": "front",
+						"stack": [
+							"foundation",
+							"react",
+							"symfony",
+							"wordpress",
+							"sass",
+							"vue",
+							"spring",
+							"laravel",
+							"bootstrap",
+							"node",
+							"javascript",
+							"c#",
+							"html"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [4.777016, 43.971654]
+					},
+					"id": 93
+				},
+				{
+					"properties": {
+						"cluster_id": 38,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Saint-Ambroix",
+						"speciality": "front",
+						"stack": [
+							"spring",
+							"angular",
+							"rails",
+							"css",
+							"c++",
+							"sass",
+							"django",
+							"java",
+							"go",
+							"php",
+							"bulma",
+							"c",
+							"less",
+							"ionic",
+							"asp.net",
+							"python",
+							"jquery",
+							"react",
+							"vue",
+							"foundation",
+							"laravel",
+							"symfony",
+							"wordpress",
+							"html",
+							"express",
+							"c#"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [4.19725, 44.248595]
+					},
+					"id": 94
+				},
+				{
+					"properties": {
+						"cluster_id": 64,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Vauvert",
+						"speciality": "front",
+						"stack": ["less", "ionic", "spring", "angular", "rails", "css", "c++", "c"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [4.285038, 43.639023]
+					},
+					"id": 95
+				},
+				{
+					"properties": {
+						"cluster_id": 15,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Uzès",
+						"speciality": "front",
+						"stack": ["spring"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [4.415571, 44.021357]
+					},
+					"id": 96
+				},
+				{
+					"properties": {
+						"cluster_id": 12,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Saint-Gilles",
+						"speciality": "front",
+						"stack": ["node"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [4.411905, 43.698432]
+					},
+					"id": 97
+				},
+				{
+					"properties": {
+						"cluster_id": 20,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Nîmes",
+						"speciality": "full",
+						"stack": [
+							"react-native",
+							"c",
+							"c#",
+							"rails",
+							"bootstrap",
+							"asp.net",
+							"less",
+							"sass",
+							"python",
+							"vue",
+							"node",
+							"express"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [4.300123, 43.835458]
+					},
+					"id": 98
+				},
+				{
+					"properties": {
+						"cluster_id": 49,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Toulouse",
+						"speciality": "full",
+						"stack": [
+							"c#",
+							"c++",
+							"asp.net",
+							"bulma",
+							"react-native",
+							"spring",
+							"java",
+							"bootstrap",
+							"rails",
+							"angular",
+							"c",
+							"html",
+							"go",
+							"sass",
+							"django",
+							"less"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [1.42198, 43.606374]
+					},
+					"id": 99
+				},
+				{
+					"properties": {
+						"cluster_id": 46,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Mérignac",
+						"speciality": "back",
+						"stack": [
+							"jquery",
+							"java",
+							"angular",
+							"foundation",
+							"symfony",
+							"vue",
+							"bootstrap",
+							"rails",
+							"node",
+							"spring",
+							"go",
+							"asp.net",
+							"laravel",
+							"express",
+							"less",
+							"html",
+							"css",
+							"javascript",
+							"php",
+							"c++",
+							"react-native",
+							"ionic",
+							"bulma",
+							"sass",
+							"django",
+							"c#",
+							"ruby"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [-0.674682, 44.83337]
+					},
+					"id": 100
+				},
+				{
+					"properties": {
+						"cluster_id": 4,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Saint-Gaudens",
+						"speciality": "back",
+						"stack": [
+							"spring",
+							"express",
+							"c",
+							"foundation",
+							"node",
+							"html",
+							"laravel",
+							"go",
+							"ionic",
+							"symfony",
+							"c#",
+							"css",
+							"javascript",
+							"sass",
+							"php",
+							"java",
+							"ruby",
+							"react-native",
+							"wordpress",
+							"c++",
+							"angular",
+							"python",
+							"jquery",
+							"bootstrap",
+							"react",
+							"bulma",
+							"django"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [0.727303, 43.120066]
+					},
+					"id": 101
+				},
+				{
+					"properties": {
+						"cluster_id": 38,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Auch",
+						"speciality": "front",
+						"stack": [
+							"html",
+							"bulma",
+							"express",
+							"laravel",
+							"vue",
+							"react",
+							"c++",
+							"django",
+							"rails",
+							"foundation",
+							"node",
+							"go",
+							"angular",
+							"asp.net",
+							"spring",
+							"c",
+							"ionic",
+							"less"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [0.57082, 43.656961]
+					},
+					"id": 102
+				},
+				{
+					"properties": {
+						"cluster_id": 33,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Condom",
+						"speciality": "back",
+						"stack": [
+							"bulma",
+							"vue",
+							"react",
+							"html",
+							"laravel",
+							"c++",
+							"django",
+							"express",
+							"foundation",
+							"rails"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [0.378942, 43.967877]
+					},
+					"id": 103
+				},
+				{
+					"properties": {
+						"cluster_id": 23,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Mirande",
+						"speciality": "back",
+						"stack": [
+							"bulma",
+							"rails",
+							"c",
+							"angular",
+							"html",
+							"react",
+							"django",
+							"express",
+							"node",
+							"vue",
+							"c++",
+							"laravel",
+							"foundation",
+							"go",
+							"spring",
+							"asp.net",
+							"wordpress",
+							"javascript",
+							"bootstrap",
+							"python",
+							"less",
+							"ruby",
+							"sass",
+							"php",
+							"ionic",
+							"java",
+							"css",
+							"react-native"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [0.408202, 43.523656]
+					},
+					"id": 104
+				},
+				{
+					"properties": {
+						"cluster_id": 77,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Châteauroux",
+						"speciality": "back",
+						"stack": [
+							"symfony",
+							"c",
+							"less",
+							"react-native",
+							"c++",
+							"sass",
+							"node",
+							"django",
+							"angular",
+							"css",
+							"rails",
+							"go",
+							"bootstrap",
+							"express",
+							"asp.net",
+							"ruby",
+							"wordpress"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [1.692997, 46.804734]
+					},
+					"id": 105
+				},
+				{
+					"properties": {
+						"cluster_id": 1,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Argenton-sur-Creuse",
+						"speciality": "back",
+						"stack": [
+							"go",
+							"django",
+							"node",
+							"python",
+							"symfony",
+							"spring",
+							"rails",
+							"java",
+							"react"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [1.496044, 46.580769]
+					},
+					"id": 106
+				},
+				{
+					"properties": {
+						"cluster_id": 30,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Gimont",
+						"speciality": "back",
+						"stack": ["vue", "react", "node", "rails", "go", "foundation", "asp.net", "spring"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [0.879493, 43.624134]
+					},
+					"id": 107
+				},
+				{
+					"properties": {
+						"cluster_id": 12,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Valençay",
+						"speciality": "front",
+						"stack": [
+							"node",
+							"rails",
+							"django",
+							"c",
+							"react",
+							"php",
+							"go",
+							"express",
+							"react-native",
+							"python",
+							"css",
+							"ionic",
+							"bulma",
+							"jquery",
+							"javascript"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [1.561059, 47.149185]
+					},
+					"id": 108
+				},
+				{
+					"properties": {
+						"cluster_id": 32,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Le Blanc",
+						"speciality": "back",
+						"stack": [
+							"node",
+							"django",
+							"react",
+							"javascript",
+							"go",
+							"python",
+							"spring",
+							"symfony",
+							"rails",
+							"java",
+							"c#",
+							"express",
+							"sass",
+							"less",
+							"c",
+							"bulma",
+							"laravel",
+							"ruby",
+							"foundation",
+							"bootstrap",
+							"jquery"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [1.090341, 46.63558]
+					},
+					"id": 109
+				},
+				{
+					"properties": {
+						"cluster_id": 14,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "La Châtre",
+						"speciality": "front",
+						"stack": ["rails", "react", "c#", "express", "django"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [1.991308, 46.575002]
+					},
+					"id": 110
+				},
+				{
+					"properties": {
+						"cluster_id": 35,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Buzançais",
+						"speciality": "back",
+						"stack": [
+							"express",
+							"node",
+							"javascript",
+							"rails",
+							"django",
+							"c#",
+							"java",
+							"react",
+							"python",
+							"bulma",
+							"go",
+							"less",
+							"sass",
+							"spring",
+							"symfony",
+							"c"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [1.414908, 46.880295]
+					},
+					"id": 111
+				},
+				{
+					"properties": {
+						"cluster_id": 70,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Issoudun",
+						"speciality": "front",
+						"stack": [
+							"wordpress",
+							"foundation",
+							"node",
+							"php",
+							"css",
+							"vue",
+							"c",
+							"jquery",
+							"html",
+							"javascript",
+							"less",
+							"laravel",
+							"react",
+							"python"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [2.015936, 46.942036]
+					},
+					"id": 112
+				},
+				{
+					"properties": {
+						"cluster_id": 35,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Châtillon-sur-Indre",
+						"speciality": "front",
+						"stack": [
+							"css",
+							"react-native",
+							"c",
+							"django",
+							"rails",
+							"python",
+							"node",
+							"ionic",
+							"express",
+							"bulma",
+							"php",
+							"react",
+							"jquery",
+							"go",
+							"javascript"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [1.174281, 46.988296]
+					},
+					"id": 113
+				},
+				{
+					"properties": {
+						"cluster_id": 72,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Saint-Gaultier",
+						"speciality": "full",
+						"stack": ["bulma", "react-native", "python"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [1.424239, 46.637419]
+					},
+					"id": 114
+				},
+				{
+					"properties": {
+						"cluster_id": 88,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Tours",
+						"speciality": "full",
+						"stack": [
+							"rails",
+							"python",
+							"c",
+							"express",
+							"jquery",
+							"django",
+							"bulma",
+							"react-native",
+							"react",
+							"node",
+							"angular",
+							"go",
+							"javascript",
+							"css",
+							"ionic",
+							"php",
+							"laravel",
+							"c++",
+							"java"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [0.678812, 47.386452]
+					},
+					"id": 115
+				},
+				{
+					"properties": {
+						"cluster_id": 81,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Blagnac",
+						"speciality": "full",
+						"stack": ["javascript", "ionic", "spring", "symfony", "c++"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [1.382904, 43.637402]
+					},
+					"id": 116
+				},
+				{
+					"properties": {
+						"cluster_id": 1,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Le Pont-de-Claix",
+						"speciality": "front",
+						"stack": [
+							"asp.net",
+							"python",
+							"javascript",
+							"spring",
+							"php",
+							"less",
+							"laravel",
+							"bulma",
+							"go",
+							"c++",
+							"wordpress",
+							"ruby",
+							"bootstrap",
+							"sass",
+							"express",
+							"rails",
+							"angular",
+							"react-native",
+							"django",
+							"html",
+							"c#",
+							"foundation",
+							"vue",
+							"node",
+							"symfony",
+							"ionic",
+							"jquery",
+							"react",
+							"c"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [5.699784, 45.12457]
+					},
+					"id": 117
+				},
+				{
+					"properties": {
+						"cluster_id": 58,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Lons-le-Saunier",
+						"speciality": "full",
+						"stack": [
+							"c++",
+							"sass",
+							"go",
+							"asp.net",
+							"python",
+							"less",
+							"bulma",
+							"laravel",
+							"javascript",
+							"wordpress",
+							"express",
+							"bootstrap",
+							"php",
+							"spring",
+							"rails",
+							"ruby",
+							"django",
+							"react-native"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [5.559875, 46.677616]
+					},
+					"id": 118
+				},
+				{
+					"properties": {
+						"cluster_id": 52,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Dole",
+						"speciality": "full",
+						"stack": [
+							"react-native",
+							"less",
+							"django",
+							"asp.net",
+							"foundation",
+							"bootstrap",
+							"php",
+							"sass",
+							"python",
+							"spring",
+							"go",
+							"angular",
+							"c#",
+							"html",
+							"bulma",
+							"laravel",
+							"vue",
+							"node",
+							"css",
+							"c"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [5.493722, 47.077973]
+					},
+					"id": 119
+				},
+				{
+					"properties": {
+						"cluster_id": 14,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Saint-Claude",
+						"speciality": "back",
+						"stack": [
+							"django",
+							"less",
+							"react-native",
+							"asp.net",
+							"sass",
+							"php",
+							"bootstrap",
+							"foundation",
+							"c#",
+							"go",
+							"html",
+							"bulma",
+							"python",
+							"laravel",
+							"angular",
+							"spring",
+							"css",
+							"node",
+							"ruby",
+							"symfony",
+							"c",
+							"vue",
+							"java",
+							"rails",
+							"ionic",
+							"jquery"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [5.865644, 46.404274]
+					},
+					"id": 120
+				},
+				{
+					"properties": {
+						"cluster_id": 57,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Champagnole",
+						"speciality": "front",
+						"stack": ["less", "django"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [5.907182, 46.745512]
+					},
+					"id": 121
+				},
+				{
+					"properties": {
+						"cluster_id": 21,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Hauts de Bienne",
+						"speciality": "full",
+						"stack": [
+							"django",
+							"c#",
+							"java",
+							"react",
+							"wordpress",
+							"html",
+							"less",
+							"go",
+							"c++",
+							"asp.net",
+							"react-native",
+							"bootstrap",
+							"php",
+							"jquery",
+							"bulma",
+							"symfony",
+							"laravel"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [5.985304, 46.512012]
+					},
+					"id": 122
+				},
+				{
+					"properties": {
+						"cluster_id": 13,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Tavaux",
+						"speciality": "back",
+						"stack": ["java", "foundation", "c#", "django", "react", "wordpress", "html", "express"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [5.411652, 47.043308]
+					},
+					"id": 123
+				},
+				{
+					"properties": {
+						"cluster_id": 4,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Arbois",
+						"speciality": "front",
+						"stack": ["asp.net", "java", "html", "c++", "symfony", "react", "javascript"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [5.773049, 46.908393]
+					},
+					"id": 124
+				},
+				{
+					"properties": {
+						"cluster_id": 6,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Dampierre",
+						"speciality": "full",
+						"stack": [
+							"go",
+							"asp.net",
+							"angular",
+							"c",
+							"node",
+							"java",
+							"laravel",
+							"react-native",
+							"ionic",
+							"html"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [5.736464, 47.173436]
+					},
+					"id": 125
+				},
+				{
+					"properties": {
+						"cluster_id": 42,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Poligny",
+						"speciality": "back",
+						"stack": [
+							"javascript",
+							"wordpress",
+							"bootstrap",
+							"jquery",
+							"angular",
+							"java",
+							"laravel",
+							"react-native",
+							"go",
+							"c",
+							"django",
+							"c#",
+							"rails",
+							"php",
+							"node",
+							"asp.net",
+							"html",
+							"less",
+							"bulma",
+							"ionic",
+							"ruby"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [5.702182, 46.840361]
+					},
+					"id": 126
+				},
+				{
+					"properties": {
+						"cluster_id": 51,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Mont-de-Marsan",
+						"speciality": "front",
+						"stack": ["html", "javascript", "wordpress"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [-0.50031, 43.891274]
+					},
+					"id": 127
+				},
+				{
+					"properties": {
+						"cluster_id": 93,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Dax",
+						"speciality": "front",
+						"stack": [
+							"html",
+							"bootstrap",
+							"django",
+							"react",
+							"javascript",
+							"wordpress",
+							"go",
+							"c",
+							"spring",
+							"c#",
+							"node"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [-1.06016, 43.700723]
+					},
+					"id": 128
+				},
+				{
+					"properties": {
+						"cluster_id": 54,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Mimizan",
+						"speciality": "full",
+						"stack": ["bootstrap", "html"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [-1.247858, 44.195575]
+					},
+					"id": 129
+				},
+				{
+					"properties": {
+						"cluster_id": 85,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Peyrehorade",
+						"speciality": "full",
+						"stack": [
+							"react",
+							"bootstrap",
+							"html",
+							"wordpress",
+							"django",
+							"c",
+							"javascript",
+							"go",
+							"c#",
+							"rails",
+							"php",
+							"node",
+							"spring",
+							"bulma",
+							"ionic",
+							"asp.net",
+							"symfony",
+							"angular",
+							"sass",
+							"jquery",
+							"c++",
+							"foundation",
+							"css",
+							"react-native"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [-1.108981, 43.554367]
+					},
+					"id": 130
+				},
+				{
+					"properties": {
+						"cluster_id": 6,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Tartas",
+						"speciality": "full",
+						"stack": [
+							"wordpress",
+							"sass",
+							"django",
+							"react",
+							"bootstrap",
+							"foundation",
+							"css",
+							"c++",
+							"go",
+							"javascript",
+							"c",
+							"symfony",
+							"html",
+							"c#",
+							"bulma",
+							"angular",
+							"react-native",
+							"rails",
+							"spring"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [-0.787334, 43.818244]
+					},
+					"id": 131
+				},
+				{
+					"properties": {
+						"cluster_id": 6,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Vendôme",
+						"speciality": "full",
+						"stack": [
+							"react",
+							"angular",
+							"python",
+							"go",
+							"foundation",
+							"php",
+							"laravel",
+							"vue",
+							"html",
+							"css",
+							"rails",
+							"less",
+							"symfony",
+							"javascript",
+							"java",
+							"sass",
+							"c#"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [1.064293, 47.795343]
+					},
+					"id": 132
+				},
+				{
+					"properties": {
+						"cluster_id": 92,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Saint-Sever",
+						"speciality": "front",
+						"stack": ["django", "wordpress", "sass"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [-0.583265, 43.760379]
+					},
+					"id": 133
+				},
+				{
+					"properties": {
+						"cluster_id": 68,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Biscarrosse",
+						"speciality": "back",
+						"stack": [
+							"react-native",
+							"rails",
+							"laravel",
+							"less",
+							"spring",
+							"vue",
+							"sass",
+							"java",
+							"django",
+							"wordpress",
+							"react",
+							"foundation",
+							"node",
+							"css",
+							"express",
+							"ruby",
+							"c++",
+							"ionic",
+							"bootstrap",
+							"php",
+							"jquery",
+							"c",
+							"go",
+							"symfony",
+							"asp.net",
+							"python",
+							"javascript",
+							"angular",
+							"bulma"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [-1.183953, 44.429564]
+					},
+					"id": 134
+				},
+				{
+					"properties": {
+						"cluster_id": 25,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Hagetmau",
+						"speciality": "front",
+						"stack": ["laravel", "react", "less", "django", "vue"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [-0.593313, 43.652177]
+					},
+					"id": 135
+				},
+				{
+					"properties": {
+						"cluster_id": 93,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Aire-sur-l'Adour",
+						"speciality": "front",
+						"stack": [
+							"bulma",
+							"html",
+							"c#",
+							"django",
+							"python",
+							"angular",
+							"react",
+							"laravel",
+							"less",
+							"asp.net",
+							"javascript",
+							"vue"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [-0.25515, 43.696074]
+					},
+					"id": 136
+				},
+				{
+					"properties": {
+						"cluster_id": 18,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Blois",
+						"speciality": "full",
+						"stack": [
+							"react",
+							"angular",
+							"go",
+							"python",
+							"php",
+							"laravel",
+							"vue",
+							"foundation",
+							"rails",
+							"html",
+							"css",
+							"less",
+							"symfony",
+							"javascript",
+							"sass",
+							"java",
+							"c#",
+							"bulma",
+							"node",
+							"express",
+							"asp.net",
+							"ruby",
+							"react-native",
+							"jquery"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [1.316402, 47.581246]
+					},
+					"id": 137
+				},
+				{
+					"properties": {
+						"cluster_id": 88,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Tours",
+						"speciality": "full",
+						"stack": ["rails", "c++", "foundation", "express", "spring", "c", "less", "python"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [0.694273, 47.395476]
+					},
+					"id": 138
+				},
+				{
+					"properties": {
+						"cluster_id": 74,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Saint-Pierre-des-Corps",
+						"speciality": "front",
+						"stack": [
+							"c++",
+							"rails",
+							"wordpress",
+							"bootstrap",
+							"c",
+							"foundation",
+							"php",
+							"java",
+							"asp.net",
+							"python",
+							"go",
+							"ionic",
+							"node",
+							"jquery",
+							"express",
+							"vue"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [0.733571, 47.390564]
+					},
+					"id": 139
+				},
+				{
+					"properties": {
+						"cluster_id": 10,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Tours",
+						"speciality": "back",
+						"stack": [
+							"spring",
+							"foundation",
+							"python",
+							"less",
+							"c",
+							"rails",
+							"express",
+							"c++",
+							"laravel",
+							"react-native",
+							"go",
+							"jquery",
+							"django",
+							"bootstrap",
+							"java",
+							"bulma",
+							"css",
+							"angular",
+							"php",
+							"ionic",
+							"react",
+							"node",
+							"javascript",
+							"c#",
+							"wordpress",
+							"symfony",
+							"ruby",
+							"sass",
+							"asp.net",
+							"vue"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [0.710545, 47.363935]
+					},
+					"id": 140
+				},
+				{
+					"properties": {
+						"cluster_id": 7,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Sainte-Maure-de-Touraine",
+						"speciality": "full",
+						"stack": [
+							"bootstrap",
+							"c++",
+							"rails",
+							"wordpress",
+							"php",
+							"c",
+							"java",
+							"foundation",
+							"go",
+							"python",
+							"ionic",
+							"asp.net",
+							"vue",
+							"node",
+							"jquery",
+							"express",
+							"bulma",
+							"ruby",
+							"sass",
+							"symfony",
+							"angular",
+							"less",
+							"css",
+							"react-native",
+							"react",
+							"django",
+							"laravel",
+							"javascript"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [0.61982, 47.106256]
+					},
+					"id": 141
+				},
+				{
+					"properties": {
+						"cluster_id": 3,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Joué-lès-Tours",
+						"speciality": "back",
+						"stack": [
+							"react-native",
+							"python",
+							"spring",
+							"foundation",
+							"less",
+							"c",
+							"express",
+							"jquery",
+							"rails",
+							"c++",
+							"go",
+							"laravel",
+							"bootstrap",
+							"django",
+							"bulma",
+							"java",
+							"css"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [0.657551, 47.336276]
+					},
+					"id": 142
+				},
+				{
+					"properties": {
+						"cluster_id": 54,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Grenoble",
+						"speciality": "back",
+						"stack": [
+							"rails",
+							"c",
+							"bootstrap",
+							"bulma",
+							"php",
+							"java",
+							"wordpress",
+							"ionic",
+							"less",
+							"python",
+							"angular",
+							"foundation",
+							"c++",
+							"asp.net",
+							"go",
+							"ruby",
+							"css",
+							"sass",
+							"symfony"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [5.7243, 45.182081]
+					},
+					"id": 143
+				},
+				{
+					"properties": {
+						"cluster_id": 8,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Saint-Martin-d'Hères",
+						"speciality": "front",
+						"stack": [
+							"express",
+							"ionic",
+							"spring",
+							"django",
+							"php",
+							"wordpress",
+							"angular",
+							"java",
+							"node",
+							"symfony",
+							"rails",
+							"bootstrap",
+							"bulma",
+							"jquery",
+							"javascript",
+							"react",
+							"css",
+							"html",
+							"c#",
+							"sass",
+							"laravel",
+							"c",
+							"react-native",
+							"vue",
+							"ruby",
+							"c++",
+							"asp.net",
+							"go",
+							"python"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [5.762952, 45.178447]
+					},
+					"id": 144
+				},
+				{
+					"properties": {
+						"cluster_id": 20,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Voiron",
+						"speciality": "back",
+						"stack": [
+							"ionic",
+							"node",
+							"bootstrap",
+							"symfony",
+							"wordpress",
+							"rails",
+							"express",
+							"django",
+							"angular",
+							"java",
+							"jquery",
+							"bulma",
+							"spring",
+							"php",
+							"javascript",
+							"react",
+							"python",
+							"html",
+							"c++",
+							"ruby"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [5.585446, 45.378051]
+					},
+					"id": 145
+				},
+				{
+					"properties": {
+						"cluster_id": 60,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Grenoble",
+						"speciality": "back",
+						"stack": []
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [5.713347, 45.188354]
+					},
+					"id": 146
+				},
+				{
+					"properties": {
+						"cluster_id": 11,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Chinon",
+						"speciality": "full",
+						"stack": [
+							"foundation",
+							"react-native",
+							"python",
+							"spring",
+							"laravel",
+							"c++",
+							"jquery",
+							"go",
+							"django",
+							"rails",
+							"bulma",
+							"c",
+							"java",
+							"express",
+							"less",
+							"bootstrap",
+							"angular",
+							"symfony",
+							"react",
+							"c#",
+							"asp.net",
+							"css",
+							"ruby",
+							"vue",
+							"wordpress",
+							"ionic",
+							"php",
+							"html",
+							"sass"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [0.249889, 47.174042]
+					},
+					"id": 147
+				},
+				{
+					"properties": {
+						"cluster_id": 78,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Bourgoin-Jallieu",
+						"speciality": "front",
+						"stack": [
+							"ionic",
+							"django",
+							"wordpress",
+							"php",
+							"node",
+							"bulma",
+							"bootstrap",
+							"javascript",
+							"java",
+							"express",
+							"symfony",
+							"rails",
+							"vue",
+							"sass",
+							"css",
+							"c",
+							"jquery",
+							"react",
+							"spring",
+							"angular"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [5.266993, 45.597957]
+					},
+					"id": 148
+				},
+				{
+					"properties": {
+						"cluster_id": 8,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Vienne",
+						"speciality": "front",
+						"stack": [
+							"bulma",
+							"php",
+							"ionic",
+							"wordpress",
+							"java",
+							"rails",
+							"bootstrap",
+							"c",
+							"less",
+							"ruby",
+							"python",
+							"foundation",
+							"c++",
+							"angular",
+							"asp.net",
+							"go",
+							"javascript",
+							"node",
+							"express",
+							"django",
+							"vue",
+							"css"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [4.88366, 45.526486]
+					},
+					"id": 149
+				},
+				{
+					"properties": {
+						"cluster_id": 66,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Amboise",
+						"speciality": "full",
+						"stack": [
+							"c++",
+							"laravel",
+							"react-native",
+							"go",
+							"python",
+							"foundation",
+							"spring",
+							"jquery",
+							"c",
+							"rails",
+							"bulma",
+							"django",
+							"java",
+							"less",
+							"bootstrap",
+							"express",
+							"css",
+							"angular",
+							"ionic",
+							"php",
+							"javascript",
+							"react",
+							"c#",
+							"node",
+							"asp.net",
+							"ruby",
+							"symfony"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [0.987649, 47.397272]
+					},
+					"id": 150
+				},
+				{
+					"properties": {
+						"cluster_id": 86,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Fontaine",
+						"speciality": "full",
+						"stack": ["c++", "spring", "asp.net", "bootstrap"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [5.682836, 45.19503]
+					},
+					"id": 151
+				},
+				{
+					"properties": {
+						"cluster_id": 36,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "La Tronche",
+						"speciality": "full",
+						"stack": [
+							"spring",
+							"asp.net",
+							"less",
+							"c++",
+							"ruby",
+							"sass",
+							"bootstrap",
+							"angular",
+							"c#",
+							"react-native",
+							"html",
+							"foundation",
+							"react",
+							"vue",
+							"node",
+							"java",
+							"python",
+							"go",
+							"laravel",
+							"bulma",
+							"javascript",
+							"php",
+							"express",
+							"wordpress",
+							"c",
+							"rails",
+							"css"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [5.74496, 45.210522]
+					},
+					"id": 152
+				},
+				{
+					"properties": {
+						"cluster_id": 50,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Loches",
+						"speciality": "full",
+						"stack": [
+							"bootstrap",
+							"c",
+							"php",
+							"go",
+							"wordpress",
+							"rails",
+							"asp.net",
+							"python",
+							"vue",
+							"symfony",
+							"ionic",
+							"node",
+							"angular",
+							"c#"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [0.981626, 47.122152]
+					},
+					"id": 153
+				},
+				{
+					"properties": {
+						"cluster_id": 94,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Cour-Cheverny",
+						"speciality": "front",
+						"stack": [
+							"vue",
+							"less",
+							"c#",
+							"c",
+							"symfony",
+							"laravel",
+							"ionic",
+							"angular",
+							"go",
+							"express",
+							"python",
+							"react-native",
+							"css",
+							"sass",
+							"spring",
+							"foundation",
+							"jquery",
+							"asp.net",
+							"rails",
+							"bootstrap",
+							"html",
+							"node",
+							"wordpress",
+							"c++",
+							"django",
+							"java",
+							"javascript"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [1.470907, 47.505436]
+					},
+					"id": 154
+				},
+				{
+					"properties": {
+						"cluster_id": 5,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Montoire-sur-le-Loir",
+						"speciality": "full",
+						"stack": [
+							"symfony",
+							"c",
+							"vue",
+							"less",
+							"c#",
+							"laravel",
+							"angular",
+							"ionic",
+							"go",
+							"express",
+							"react-native",
+							"python",
+							"spring",
+							"foundation",
+							"css",
+							"sass",
+							"rails",
+							"html",
+							"php",
+							"bulma",
+							"asp.net",
+							"react",
+							"django",
+							"ruby",
+							"javascript",
+							"jquery",
+							"java",
+							"bootstrap",
+							"node",
+							"wordpress"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [0.849591, 47.762294]
+					},
+					"id": 155
+				},
+				{
+					"properties": {
+						"cluster_id": 91,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Saint-Étienne",
+						"speciality": "full",
+						"stack": [
+							"php",
+							"symfony",
+							"html",
+							"vue",
+							"c",
+							"less",
+							"laravel",
+							"rails",
+							"angular",
+							"ionic",
+							"bulma"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [4.382506, 45.455582]
+					},
+					"id": 156
+				},
+				{
+					"properties": {
+						"cluster_id": 13,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Saint-Chamond",
+						"speciality": "front",
+						"stack": ["symfony", "angular", "php", "bootstrap", "c++", "java", "html", "ruby", "go"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [4.505748, 45.470463]
+					},
+					"id": 157
+				},
+				{
+					"properties": {
+						"cluster_id": 70,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Le Chambon-Feugerolles",
+						"speciality": "front",
+						"stack": [
+							"angular",
+							"symfony",
+							"php",
+							"bootstrap",
+							"html",
+							"c++",
+							"ruby",
+							"java",
+							"asp.net",
+							"javascript",
+							"django",
+							"go",
+							"ionic",
+							"bulma",
+							"express",
+							"vue",
+							"sass",
+							"jquery",
+							"c#",
+							"react-native",
+							"python",
+							"c",
+							"wordpress",
+							"less",
+							"spring",
+							"rails",
+							"laravel",
+							"node"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [4.331838, 45.389663]
+					},
+					"id": 158
+				},
+				{
+					"properties": {
+						"cluster_id": 52,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Montbrison",
+						"speciality": "back",
+						"stack": [
+							"python",
+							"jquery",
+							"asp.net",
+							"javascript",
+							"wordpress",
+							"django",
+							"java",
+							"angular",
+							"less",
+							"c",
+							"react-native",
+							"sass",
+							"c#",
+							"go",
+							"ruby",
+							"ionic",
+							"rails",
+							"symfony",
+							"vue",
+							"laravel",
+							"css",
+							"spring",
+							"node",
+							"react"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [4.069547, 45.604196]
+					},
+					"id": 159
+				},
+				{
+					"properties": {
+						"cluster_id": 44,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Eaubonne",
+						"speciality": "back",
+						"stack": ["react"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [2.277576, 48.9916]
+					},
+					"id": 160
+				},
+				{
+					"properties": {
+						"cluster_id": 34,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Le Puy-en-Velay",
+						"speciality": "front",
+						"stack": [
+							"c#",
+							"jquery",
+							"vue",
+							"spring",
+							"foundation",
+							"ionic",
+							"ruby",
+							"react",
+							"sass",
+							"symfony",
+							"laravel",
+							"css",
+							"bulma",
+							"node",
+							"rails",
+							"html",
+							"python",
+							"go",
+							"express",
+							"c",
+							"react-native",
+							"php",
+							"c++",
+							"wordpress",
+							"less",
+							"asp.net",
+							"javascript",
+							"bootstrap"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [3.899202, 45.030881]
+					},
+					"id": 161
+				},
+				{
+					"properties": {
+						"cluster_id": 72,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Saint-Étienne",
+						"speciality": "front",
+						"stack": []
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [4.408983, 45.440497]
+					},
+					"id": 162
+				},
+				{
+					"properties": {
+						"cluster_id": 10,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Roissy-en-France",
+						"speciality": "back",
+						"stack": ["django", "react", "go"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [2.513436, 48.997813]
+					},
+					"id": 163
+				},
+				{
+					"properties": {
+						"cluster_id": 79,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Firminy",
+						"speciality": "full",
+						"stack": [
+							"python",
+							"django",
+							"jquery",
+							"asp.net",
+							"javascript",
+							"java",
+							"angular",
+							"wordpress",
+							"react-native",
+							"less",
+							"c",
+							"sass",
+							"ruby",
+							"c#",
+							"ionic",
+							"go",
+							"php",
+							"bootstrap",
+							"express",
+							"spring",
+							"symfony",
+							"html",
+							"rails",
+							"vue",
+							"node",
+							"css",
+							"bulma"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [4.287403, 45.386905]
+					},
+					"id": 164
+				},
+				{
+					"properties": {
+						"cluster_id": 64,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Courdimanche",
+						"speciality": "full",
+						"stack": [
+							"react",
+							"go",
+							"jquery",
+							"django",
+							"react-native",
+							"angular",
+							"c",
+							"html",
+							"ionic",
+							"sass",
+							"node",
+							"wordpress",
+							"php",
+							"ruby",
+							"vue",
+							"python",
+							"c++",
+							"asp.net",
+							"less",
+							"bootstrap",
+							"rails",
+							"c#",
+							"foundation",
+							"laravel"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [2.005043, 49.040562]
+					},
+					"id": 165
+				},
+				{
+					"properties": {
+						"cluster_id": 13,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Rive-de-Gier",
+						"speciality": "full",
+						"stack": [
+							"react-native",
+							"python",
+							"c",
+							"jquery",
+							"angular",
+							"wordpress",
+							"javascript",
+							"java",
+							"less",
+							"sass",
+							"django",
+							"asp.net",
+							"ionic",
+							"c#",
+							"ruby",
+							"go",
+							"express",
+							"php",
+							"spring"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [4.61666, 45.522199]
+					},
+					"id": 166
+				},
+				{
+					"properties": {
+						"cluster_id": 67,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Saint-André-le-Puy",
+						"speciality": "full",
+						"stack": ["php"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [4.260698, 45.64477]
+					},
+					"id": 167
+				},
+				{
+					"properties": {
+						"cluster_id": 30,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Yssingeaux",
+						"speciality": "full",
+						"stack": [
+							"c#",
+							"asp.net",
+							"jquery",
+							"c++",
+							"foundation",
+							"ionic",
+							"vue",
+							"php",
+							"python",
+							"react-native",
+							"react"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [4.125107, 45.139056]
+					},
+					"id": 168
+				},
+				{
+					"properties": {
+						"cluster_id": 38,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Langeac",
+						"speciality": "back",
+						"stack": ["react-native", "jquery", "asp.net", "python"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [3.47985, 45.077116]
+					},
+					"id": 169
+				},
+				{
+					"properties": {
+						"cluster_id": 76,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Le Chambon-sur-Lignon",
+						"speciality": "full",
+						"stack": ["ruby", "django", "javascript", "symfony", "laravel", "bulma"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [4.329501, 45.054499]
+					},
+					"id": 170
+				},
+				{
+					"properties": {
+						"cluster_id": 25,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Brioude",
+						"speciality": "front",
+						"stack": [
+							"c#",
+							"jquery",
+							"vue",
+							"php",
+							"asp.net",
+							"react-native",
+							"django",
+							"spring",
+							"c++",
+							"ionic",
+							"foundation",
+							"python",
+							"ruby",
+							"javascript",
+							"less",
+							"react",
+							"wordpress",
+							"bootstrap"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [3.381042, 45.297811]
+					},
+					"id": 171
+				},
+				{
+					"properties": {
+						"cluster_id": 51,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Roanne",
+						"speciality": "full",
+						"stack": []
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [4.072015, 46.043412]
+					},
+					"id": 172
+				},
+				{
+					"properties": {
+						"cluster_id": 32,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Nantes",
+						"speciality": "full",
+						"stack": ["java", "ruby", "foundation", "c++", "rails", "php", "c#", "go"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [-1.527225, 47.186189]
+					},
+					"id": 173
+				},
+				{
+					"properties": {
+						"cluster_id": 11,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Sainte-Sigolène",
+						"speciality": "back",
+						"stack": ["ruby", "django", "javascript"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [4.227086, 45.248052]
+					},
+					"id": 174
+				},
+				{
+					"properties": {
+						"cluster_id": 22,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Brives-Charensac",
+						"speciality": "back",
+						"stack": [
+							"django",
+							"ruby",
+							"javascript",
+							"express",
+							"symfony",
+							"less",
+							"bulma",
+							"laravel",
+							"php",
+							"bootstrap",
+							"foundation",
+							"java",
+							"react-native",
+							"rails",
+							"wordpress",
+							"vue",
+							"react",
+							"c",
+							"angular"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [3.922626, 45.044491]
+					},
+					"id": 175
+				},
+				{
+					"properties": {
+						"cluster_id": 75,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Rosières",
+						"speciality": "front",
+						"stack": [
+							"angular",
+							"rails",
+							"react-native",
+							"go",
+							"foundation",
+							"ruby",
+							"bootstrap",
+							"php",
+							"wordpress",
+							"react",
+							"c",
+							"java",
+							"ionic",
+							"vue",
+							"c++",
+							"asp.net",
+							"sass",
+							"html",
+							"javascript",
+							"django",
+							"express"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [4.005918, 45.129261]
+					},
+					"id": 176
+				},
+				{
+					"properties": {
+						"cluster_id": 67,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Nantes",
+						"speciality": "front",
+						"stack": [
+							"rails",
+							"react-native",
+							"angular",
+							"go",
+							"foundation",
+							"ruby",
+							"php",
+							"bootstrap",
+							"java",
+							"ionic"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [-1.560458, 47.226825]
+					},
+					"id": 177
+				},
+				{
+					"properties": {
+						"cluster_id": 35,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Craponne-sur-Arzon",
+						"speciality": "back",
+						"stack": [
+							"ruby",
+							"bulma",
+							"django",
+							"javascript",
+							"symfony",
+							"less",
+							"laravel",
+							"php",
+							"express",
+							"vue",
+							"wordpress",
+							"java",
+							"rails",
+							"react-native",
+							"foundation",
+							"bootstrap",
+							"c#",
+							"html",
+							"ionic",
+							"asp.net",
+							"c",
+							"jquery",
+							"react",
+							"css",
+							"spring",
+							"angular",
+							"c++",
+							"sass"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [3.861711, 45.329722]
+					},
+					"id": 178
+				},
+				{
+					"properties": {
+						"cluster_id": 90,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Nantes",
+						"speciality": "back",
+						"stack": [
+							"ruby",
+							"rails",
+							"spring",
+							"html",
+							"java",
+							"javascript",
+							"sass",
+							"php",
+							"foundation"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [-1.529643, 47.254418]
+					},
+					"id": 179
+				},
+				{
+					"properties": {
+						"cluster_id": 40,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Rezé",
+						"speciality": "full",
+						"stack": [
+							"ruby",
+							"foundation",
+							"rails",
+							"spring",
+							"jquery",
+							"c#",
+							"html",
+							"javascript",
+							"go",
+							"php",
+							"c++",
+							"laravel",
+							"java",
+							"express",
+							"sass",
+							"bulma",
+							"ionic",
+							"node",
+							"symfony",
+							"django",
+							"vue",
+							"react-native",
+							"python",
+							"less",
+							"wordpress",
+							"react",
+							"asp.net",
+							"c",
+							"angular",
+							"css"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [-1.552789, 47.17269]
+					},
+					"id": 180
+				},
+				{
+					"properties": {
+						"cluster_id": 67,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "La Baule-Escoublac",
+						"speciality": "front",
+						"stack": ["jquery", "node", "html", "wordpress", "bulma", "c", "php", "go", "c++"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [-2.363461, 47.288754]
+					},
+					"id": 181
+				},
+				{
+					"properties": {
+						"cluster_id": 70,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Nantes",
+						"speciality": "back",
+						"stack": [
+							"ruby",
+							"foundation",
+							"rails",
+							"php",
+							"react-native",
+							"go",
+							"angular",
+							"bootstrap",
+							"java",
+							"c++",
+							"vue",
+							"ionic",
+							"c",
+							"react",
+							"wordpress",
+							"asp.net",
+							"jquery",
+							"sass",
+							"c#",
+							"spring",
+							"laravel",
+							"javascript",
+							"bulma",
+							"html",
+							"express",
+							"python"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [-1.555335, 47.239367]
+					},
+					"id": 182
+				},
+				{
+					"properties": {
+						"cluster_id": 85,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Joinville",
+						"speciality": "back",
+						"stack": ["rails", "css", "javascript", "less"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [5.142411, 48.442392]
+					},
+					"id": 183
+				},
+				{
+					"properties": {
+						"cluster_id": 69,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Liévin",
+						"speciality": "back",
+						"stack": [
+							"symfony",
+							"react",
+							"angular",
+							"c",
+							"django",
+							"vue",
+							"foundation",
+							"php",
+							"express",
+							"less",
+							"go",
+							"ionic",
+							"c#",
+							"ruby",
+							"bootstrap",
+							"java",
+							"asp.net",
+							"python",
+							"jquery",
+							"wordpress",
+							"javascript",
+							"spring",
+							"rails",
+							"bulma",
+							"html",
+							"react-native",
+							"c++",
+							"node"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [2.769683, 50.424192]
+					},
+					"id": 184
+				},
+				{
+					"properties": {
+						"cluster_id": 44,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Béthune",
+						"speciality": "front",
+						"stack": ["express", "css", "symfony", "foundation", "html", "bootstrap"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [2.646031, 50.528207]
+					},
+					"id": 185
+				},
+				{
+					"properties": {
+						"cluster_id": 50,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Clermont-Ferrand",
+						"speciality": "front",
+						"stack": [
+							"python",
+							"react",
+							"asp.net",
+							"go",
+							"jquery",
+							"foundation",
+							"symfony",
+							"ionic",
+							"spring"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [3.085783, 45.792946]
+					},
+					"id": 186
+				},
+				{
+					"properties": {
+						"cluster_id": 73,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Riom",
+						"speciality": "full",
+						"stack": [
+							"asp.net",
+							"react-native",
+							"react",
+							"go",
+							"python",
+							"symfony",
+							"jquery",
+							"c",
+							"ionic",
+							"javascript",
+							"css",
+							"foundation",
+							"spring",
+							"wordpress",
+							"bulma",
+							"rails",
+							"java",
+							"php",
+							"c++",
+							"laravel",
+							"html",
+							"angular",
+							"express",
+							"vue",
+							"django"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [3.114167, 45.891484]
+					},
+					"id": 187
+				},
+				{
+					"properties": {
+						"cluster_id": 31,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Thiers",
+						"speciality": "front",
+						"stack": [
+							"react",
+							"symfony",
+							"react-native",
+							"asp.net",
+							"go",
+							"c",
+							"jquery",
+							"python",
+							"ionic",
+							"css",
+							"foundation",
+							"javascript",
+							"wordpress",
+							"spring",
+							"bulma",
+							"rails",
+							"c++",
+							"laravel",
+							"angular",
+							"html",
+							"vue",
+							"express",
+							"java"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [3.538758, 45.864766]
+					},
+					"id": 188
+				},
+				{
+					"properties": {
+						"cluster_id": 11,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Clermont-Ferrand",
+						"speciality": "front",
+						"stack": ["foundation"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [3.107042, 45.786671]
+					},
+					"id": 189
+				},
+				{
+					"properties": {
+						"cluster_id": 96,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Chamalières",
+						"speciality": "back",
+						"stack": ["c", "javascript", "jquery", "ionic", "go"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [3.060492, 45.774141]
+					},
+					"id": 190
+				},
+				{
+					"properties": {
+						"cluster_id": 89,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Ambert",
+						"speciality": "back",
+						"stack": [
+							"react-native",
+							"spring",
+							"rails",
+							"foundation",
+							"symfony",
+							"react",
+							"bulma",
+							"css",
+							"asp.net",
+							"wordpress",
+							"go",
+							"python",
+							"ionic",
+							"jquery",
+							"c",
+							"javascript",
+							"node",
+							"angular",
+							"ruby",
+							"sass",
+							"express",
+							"html",
+							"php",
+							"vue",
+							"c++",
+							"java",
+							"c#",
+							"laravel",
+							"less"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [3.745486, 45.549591]
+					},
+					"id": 191
+				},
+				{
+					"properties": {
+						"cluster_id": 91,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Civray",
+						"speciality": "back",
+						"stack": [
+							"express",
+							"ruby",
+							"python",
+							"bootstrap",
+							"c++",
+							"react-native",
+							"javascript",
+							"rails",
+							"php",
+							"less",
+							"angular",
+							"html"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [0.296554, 46.144632]
+					},
+					"id": 192
+				},
+				{
+					"properties": {
+						"cluster_id": 60,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Bollène",
+						"speciality": "full",
+						"stack": ["css", "angular", "laravel"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [4.751769, 44.291413]
+					},
+					"id": 193
+				},
+				{
+					"properties": {
+						"cluster_id": 83,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "Valréas",
+						"speciality": "front",
+						"stack": [
+							"asp.net",
+							"angular",
+							"css",
+							"django",
+							"laravel",
+							"html",
+							"javascript",
+							"react"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [4.986506, 44.371583]
+					},
+					"id": 194
+				},
+				{
+					"properties": {
+						"cluster_id": 48,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "L'Isle-sur-la-Sorgue",
+						"speciality": "full",
+						"stack": ["bootstrap", "c#", "ruby", "css", "foundation"]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [5.058675, 43.91503]
+					},
+					"id": 195
+				},
+				{
+					"properties": {
+						"cluster_id": 93,
+						"country": "France",
+						"zipcode": "87500",
+						"department": "87",
+						"city": "La Roche-sur-Yon",
+						"speciality": "back",
+						"stack": [
+							"bootstrap",
+							"vue",
+							"foundation",
+							"asp.net",
+							"ruby",
+							"django",
+							"c#",
+							"css",
+							"react",
+							"bulma",
+							"javascript",
+							"html",
+							"wordpress",
+							"less",
+							"angular",
+							"laravel",
+							"sass",
+							"react-native",
+							"c",
+							"symfony",
+							"node",
+							"express",
+							"ionic",
+							"java",
+							"c++",
+							"rails"
+						]
+					},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [-1.412585, 46.671717]
+					},
+					"id": 196
+				}
+			]
+		}
+	],
+	"developers": [{}]
+}

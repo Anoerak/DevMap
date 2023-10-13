@@ -9,3 +9,9 @@
 !/front/.env.example
 /front/vite.config.js.timestamp-*
 /front/vite.config.ts.timestamp-*
+
+
+/Docker/addok-data/addok.db
+/Docker/addok-data/dump.rdb
+/Docker/logs
+/Docker/addok-france-bundle.zip
