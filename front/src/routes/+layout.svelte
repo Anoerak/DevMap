@@ -1,6 +1,7 @@
 <script>
-	import Header from '../components/header/Header.svelte';
-	import Footer from '../components/footer/Footer.svelte';
+	import Header from '../components/header/+page.svelte';
+	import Footer from '../components/footer/+page.svelte';
+
 </script>
 
 <style lang="scss">
@@ -11,7 +12,8 @@
 <Header />
 
 <main>
-	<slot></slot>
+	<slot>
+	</slot>
 </main>
 
 <Footer />

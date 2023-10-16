@@ -6,7 +6,8 @@
 	import { onMount, onDestroy } from "svelte";
 	// @ts-ignore
 	import { Map } from "mapbox-gl";
-	import apiJsonServer from '../../hooks/apiJsonServer.js';
+	// import apiJsonServer from '../../hooks/apiJsonServer.js';
+	import apiServer from '../../hooks/apiServer.js';
 	// @ts-ignore
 	import { MAPBOX_API_KEY } from '../../config/config.local';
 
@@ -41,8 +42,10 @@
 		const initialState = { lng: lng, lat: lat, zoom: zoom };
 
 		const db = async () => {
-			const jsonCall = new apiJsonServer();
-			const dataset = await jsonCall.getAllGeojson();
+			const jsonCall = new apiServer();
+			const dataset = await jsonCall.getAllUsers();
+			// const jsonCall = new apiJsonServer();
+			// const dataset = await jsonCall.getAllGeojson();
 			return dataset;
 		};
 
@@ -162,7 +165,7 @@
 			// @ts-ignore
 			map.on('click', 'unclustered-point', (e) => {
 				const coordinates = e.features[0].geometry.coordinates.slice();
-				const speciality = e.features[0].properties.speciality;
+				const specialty = e.features[0].properties.specialty;
 				const stack = e.features[0].properties.stack;
 			
 				// Ensure that if the map is zoomed out such that
@@ -177,7 +180,7 @@
 				.setLngLat(coordinates)
 				// We display the speciality and the stack of the developer in a way that is more readable
 				.setHTML(
-					`<h3>Speciality: ${speciality}</h3>
+					`<h3>Speciality: ${specialty}</h3>
 					<p>Stack:<br/>${stack}</p>`
 				)
 				// @ts-ignore

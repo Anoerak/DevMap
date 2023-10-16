@@ -3,16 +3,19 @@
 	import { afterUpdate } from 'svelte';
 	import Logo from '../../lib/img/logo.webp';
 	import MenuSvg from '../../lib/img/svg/menu.svg';
+	import Modal from '../modal/+page.svelte';
+	import RegisterForm from '../register_form/+page.svelte';
 
 	// Set the current URL
 	let pageTag = $page.url.pathname.split('/').filter(Boolean).pop() || '/';
-	
 	// Set it as soon as pages update
 	afterUpdate(() => {
 		pageTag = $page.url.pathname.split('/').filter(Boolean).pop() || '/';
 		return pageTag;
 	});
-	
+
+	let showModal = false;
+
 </script>
 
 <style lang="scss">
@@ -56,8 +59,16 @@
 	</div>
 
 	<div class="register">
-		<button>
+		<button on:click={
+			() => {
+				showModal = true;
+			}
+		}>
 			Register
 		</button>
 	</div>
 </header>
+
+<Modal bind:showModal>
+	<RegisterForm />
+</Modal>

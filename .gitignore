@@ -10,6 +10,20 @@
 /front/vite.config.js.timestamp-*
 /front/vite.config.ts.timestamp-*
 
+###> symfony/framework-bundle ###
+/back-api/.env.local
+/back-api/.env.local.php
+/back-api/.env.*.local
+/back-api/config/secrets/prod/prod.decrypt.private.php
+/back-api/public/bundles/
+/back-api/var/
+/back-api/vendor/
+###< symfony/framework-bundle ###
+
+###> phpunit/phpunit ###
+/back-api//phpunit.xml
+/back-api/.phpunit.result.cache
+###< phpunit/phpunit ###
 
 /Docker/addok-data/addok.db
 /Docker/addok-data/dump.rdb

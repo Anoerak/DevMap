@@ -1,11 +1,11 @@
-class apiJsonServer {
+class apiServer {
 	constructor() {
-		this.serverUrl = 'http://localhost:3000';
+		this.serverUrl = 'https://127.0.0.1:8000/api';
 	}
 
 	// GET One /geojson/id
-	async getGeojson(/** @type {string} */ id) {
-		const url = `${this.serverUrl}/geojson/${id}`;
+	async getOneUser(/** @type {string} */ id) {
+		const url = `${this.serverUrl}/user_details/${id}`;
 
 		const response = await fetch(url, {
 			method: 'GET',
@@ -24,8 +24,8 @@ class apiJsonServer {
 	}
 
 	// GET All /geojson
-	async getAllGeojson() {
-		const url = `${this.serverUrl}/geojson`;
+	async getAllUsers() {
+		const url = `${this.serverUrl}/getAllGeojson`;
 
 		const response = await fetch(url, {
 			method: 'GET',
@@ -39,13 +39,13 @@ class apiJsonServer {
 		} else {
 			const data = await response.json();
 			// console.log('Success:', data[0]);
-			return data[0]; // return the data so it can be used by other functions
+			return data; // return the data so it can be used by other functions
 		}
 	}
 
 	// POST /geojson
-	async postGeojson(/** @type {Object} */ data) {
-		const url = `${this.serverUrl}/geojson?_embed=features/features`;
+	async postUser(/** @type {Object} */ data) {
+		const url = `${this.serverUrl}/user`;
 
 		const response = await fetch(url, {
 			method: 'POST',
@@ -65,8 +65,8 @@ class apiJsonServer {
 	}
 
 	// PUT /geojson/id
-	async putGeojson(/** @type {string} */ id, /** @type {Object} */ data) {
-		const url = `${this.serverUrl}/geojson/${id}`;
+	async putUser(/** @type {string} */ id, /** @type {Object} */ data) {
+		const url = `${this.serverUrl}/user_details/${id}`;
 
 		const response = await fetch(url, {
 			method: 'PUT',
@@ -86,8 +86,8 @@ class apiJsonServer {
 	}
 
 	// DELETE /geojson/id
-	async deleteGeojson(/** @type {string} */ id) {
-		const url = `${this.serverUrl}/geojson/${id}`;
+	async deleteUser(/** @type {string} */ id) {
+		const url = `${this.serverUrl}/user_details/${id}`;
 
 		await fetch(url, {
 			method: 'DELETE',
@@ -102,7 +102,7 @@ class apiJsonServer {
 
 	// Get All /country
 	async getAllCountry() {
-		const url = `${this.serverUrl}/country`;
+		const url = `${this.serverUrl}/countries`;
 
 		const response = await fetch(url, {
 			method: 'GET',
@@ -115,14 +115,14 @@ class apiJsonServer {
 			throw new Error(`HTTP error! status: ${response.status}`);
 		} else {
 			const data = await response.json();
-			// console.log('Success:', data);
-			return data; // return the data so it can be used by other functions
+			// console.log('Success:', data['hydra:member']);
+			return data['hydra:member']; // return the data so it can be used by other functions
 		}
 	}
 
 	// Get All /stack
 	async getAllStack() {
-		const url = `${this.serverUrl}/stack`;
+		const url = `${this.serverUrl}/tech_stacks`;
 
 		const response = await fetch(url, {
 			method: 'GET',
@@ -135,10 +135,10 @@ class apiJsonServer {
 			throw new Error(`HTTP error! status: ${response.status}`);
 		} else {
 			const data = await response.json();
-			// console.log('Success:', data);
-			return data; // return the data so it can be used by other functions
+			// console.log('Success:', data['hydra:member']);
+			return data['hydra:member']; // return the data so it can be used by other functions
 		}
 	}
 }
 
-export default apiJsonServer;
+export default apiServer;
