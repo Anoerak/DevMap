@@ -1,16 +1,17 @@
 
 <script>
-	/**
-	 * @type {boolean}
-	 */
-	export let showModal;
+	import { getContext } from 'svelte';
 	
+	const store = getContext('store');
+
 	/**
 	 * @type {HTMLDialogElement}
 	 */
 	let dialog;
 
-	$: if (dialog && showModal) dialog.showModal();
+	$: if ($store.showModal) {
+		dialog.showModal();
+	}
 	
 </script>
 
@@ -19,7 +20,7 @@
 <dialog
 	class="dialog"
 	bind:this={dialog}
-	on:close={() => (showModal = false)}
+	on:close={() => ($store.showModal = false)}
 	on:click|self={() => dialog.close()}
 >
 	<!-- svelte-ignore a11y-no-static-element-interactions -->

@@ -30,16 +30,8 @@ class ApiUserController extends AbstractController
     #[Route('/api/user', name: 'app_api_user', methods: ['POST'])]
     public function createUser(Request $request, EntityManagerInterface $entityManager, UserService $userService): Response
     {
-        // // We check if the user is already registered
-        // $responseCheck = $userService->checkUser($request, $entityManager);
-
-        // if ($responseCheck) {
-        //     return $responseCheck;
-        // }
-
         // We create the User via UserService
         $response = $userService->createUser($request, $entityManager);
-
 
         return $response;
     }

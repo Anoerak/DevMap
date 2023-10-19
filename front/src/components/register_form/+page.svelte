@@ -1,13 +1,12 @@
 <script>
 // @ts-nocheck
 
-	import { onMount, getContext } from 'svelte';
+	import { onMount, getContext, afterUpdate } from 'svelte';
 	/*----------------------
 	|	IMPORTS
 	----------------------*/
 	// @ts-ignore
 	import userModel from '../../models/userModel.js';
-
 	import { getAllCountry, getAllStack, createUser } from '../../routes/api/backend/+server';
 	import { getCoordByZipCountry } from '../../routes/api/openweather/+server';
 	import { error } from '@sveltejs/kit';
@@ -16,7 +15,55 @@
 	|	DECLARATIONS (VARIABLES)
 	----------------------*/
 	const store = getContext('store');
-	
+
+	$: if(response) {
+		if(response.status === 200) {
+			store.update((/** @type {{ userCounter: number; dataset: { type: string; features: any[]; }; mapboxDataset: { type: string; features: any[]; }; lastUser: { lat: number; lng: number; zoom: number;};  }} */ store) => {
+				const dataUser = {
+					type: 'Feature',
+					id: Math.random(),
+					properties: {
+						username: user.user.username,
+						email: user.user.email,
+						country: user.country,
+						zipcode: user.zipcode,
+						shortZipcode: user.shortZipcode,
+						city: user.city,
+						specialty: user.specialty,
+						stack: user.stack,
+						active: false,
+					},
+					geometry: {
+						type: 'Point',
+						coordinates: [
+							user.geometryCoordinates[0],
+							user.geometryCoordinates[1]
+						]
+					}
+				};
+				console.log(dataUser);
+				store.dataset.features.push(dataUser);
+				store.lastUser.lat = geoDatas.lat;
+				store.lastUser.lng = geoDatas.lon;
+				store.lastUser.zoom = 10;
+				store.apiResponse.message = response.message;
+				store.apiResponse.data = response.data;
+				store.showModal = false;
+				return store;
+			});
+		}
+
+		if(response.status === 400) {
+			store.update((/** @type {{ userCounter: number; dataset: { type: string; features: any[]; }; mapboxDataset: { type: string; features: any[]; }; lastUser: { lat: number; lng: number; zoom: number;};  }} */ store) => {
+				store.apiResponse.message = response.message;
+				store.apiResponse.data = response.data;
+				store.showModal = false;
+				return store;
+			});
+		}
+
+	}
+
 	/**
 	 * @type {any[]}
 	 */
@@ -100,7 +147,7 @@
 		return stackSelection;
 	};
 
-	const handleSubmit = async (/** @type {Event} */ event) => {
+	const handleSubmit =  async (/** @type {Event} */ event) => {
 		event.preventDefault();
 		const form = event.currentTarget;
 		const formData = new FormData(form);
@@ -126,7 +173,7 @@
 
 		response = await createUser(user);
 
-		return response;
+		return { user, response };
 	};
 	
 	onMount(() => {
@@ -138,7 +185,9 @@
 
 <form
 	method="POST"
-	on:submit|preventDefault={handleSubmit}
+	on:submit|preventDefault={
+		handleSubmit
+	}
 	>
 	<label for="username">Username</label>
 	<input 

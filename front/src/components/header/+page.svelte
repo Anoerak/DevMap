@@ -1,6 +1,6 @@
 <script>
 	import { page } from '$app/stores';
-	import { afterUpdate } from 'svelte';
+	import { afterUpdate, getContext } from 'svelte';
 	import Logo from '$lib/img/logo.webp';
 	import MenuSvg from '$lib/img/svg/menu.svg';
 	import Modal from '../modal/+page.svelte';
@@ -14,7 +14,7 @@
 		return pageTag;
 	});
 
-	let showModal = false;
+	const store = getContext('store');
 
 </script>
 
@@ -59,16 +59,18 @@
 	</div>
 
 	<div class="register">
-		<button on:click={
+		<button 
+		on:click={
 			() => {
-				showModal = true;
+				$store.showModal = true;
 			}
-		}>
+		}
+		>
 			Register
 		</button>
 	</div>
 </header>
 
-<Modal bind:showModal>
+<Modal>
 	<RegisterForm />
 </Modal>

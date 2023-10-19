@@ -28,37 +28,30 @@ class UserService extends AbstractController
 		]);
 	}
 
-	public function checkUser(Request $request, EntityManagerInterface $entityManager): Response
+	public function createUser(Request $request, EntityManagerInterface $entityManager): Response
 	{
 		// We get the POST data
 		$data = json_decode($request->getContent(), true);
 
 		// We check if the user is already registered
 		$user = $entityManager->getRepository(User::class)->findOneBy(['email' => $data['user']['email']]);
-
-		// We throw an error if the user is already registered
 		if ($user) {
-			$responseCheck = new JsonResponse([
+			$response = new JsonResponse([
 				'status' => 400,
 				'title' => 'Error',
 				'message' => 'This email is already registered. Please try again with another email.'
 			]);
 
-			$responseCheck->headers->add([
+			$response->headers->add([
 				'Content-Type' => 'text/plain',
 				'Access-Control-Allow-Origin' => '*',
 			]);
-			$responseCheck->prepare($request);
-			$responseCheck->send();
+			$response->prepare($request);
+			$response->send();
 
-			return $responseCheck;
+			return $response;
 		}
-	}
 
-	public function createUser(Request $request, EntityManagerInterface $entityManager): Response
-	{
-		// We get the POST data
-		$data = json_decode($request->getContent(), true);
 
 		$hashedEmail = $this->encoder->getPasswordHasher('bcrypt')->hash($data['user']['email']);
 

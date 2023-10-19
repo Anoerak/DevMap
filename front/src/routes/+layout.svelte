@@ -4,7 +4,6 @@
 	----------------------*/
 	import Header from '../components/header/+page.svelte';
 	import Footer from '../components/footer/+page.svelte';
-	import Modal from '../components/modal/+page.svelte';
 	import { setContext } from 'svelte';
 	import { writable } from 'svelte/store';
 
@@ -28,9 +27,8 @@
 			message: '',
 			data: {},
 		},
+		showModal: false,
 	});
-
-	let showModal = false;
 
 	$: store.subscribe((/** @type {{ userCounter: number; dataset: { type: string; features: any[]; }; mapboxDataset: { type: string; features: any[]; }; lastUser: { lat: number; lng: number; zoom: number;};  }} */ store) => {
 		store.mapboxDataset.features = store.dataset.features.filter((/** @type {{ properties: { active: boolean; }; }} */ element) => {
@@ -51,9 +49,6 @@
 <Header />
 
 <main>
-	<Modal bind:showModal>
-		{$store.apiResponse.message}
-	</Modal>
 	<slot>
 	</slot>
 </main>
