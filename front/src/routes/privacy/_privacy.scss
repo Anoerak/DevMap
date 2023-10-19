@@ -1,0 +1,31 @@
+section#privacy {
+	min-height: calc(100vh - 4rem);
+	@import './_privacyPolicy_responsive.css';
+
+
+	align-items: flex-start;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 0 auto;
+	min-height: 100vh;
+	width: 80%;
+	padding-bottom: 2rem;
+	max-width: 3440px;
+
+	h1 {
+		text-align: center;
+		font-size: 40px;
+		margin-top: 50px;
+		color: #333;
+		max-width: 1440px;
+	}
+
+	p {
+		font-size: 18px;
+		line-height: 1.5;
+		margin: 20px 0;
+		color: #555;
+		max-width: 1440px;
+	}
+}

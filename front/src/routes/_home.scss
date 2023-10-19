@@ -1,0 +1,21 @@
+section#home {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: calc(100vh - 4rem);
+
+	h1 {
+		font-size: 3rem;
+		text-align: center;
+	}
+
+	h2 {
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	.fa-solid {
+		margin: 1rem;
+	}
+}

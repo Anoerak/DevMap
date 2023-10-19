@@ -1,18 +1,10 @@
 <script>
-	import { onMount } from 'svelte';
-	import './_contact.scss';
-
-	let name = 'contact';
-
-	onMount(() => {
-		console.log('mounted');
-	});
 </script>
 
 <style lang="scss">
-
+	@import './contact.scss';
 </style>
 
-<div class="contact">
+<section id="contact">
 	<h1>contact</h1>
-</div>
+</section>

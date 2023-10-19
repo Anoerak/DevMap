@@ -1,20 +1,20 @@
 class userModel {
-	/**
-	 * @param {{ email: string, username: string; country: string; zipcode: string; shortZipcode: string; city: string; specialty: string; stack: string[]; longitude: number; latitude: number; }} datas
-	 */
-	constructor(datas) {
+	constructor() {
+		/**
+		 * @param {{ country: string; zipcode: string; shortZipcode: string; city: string; specialty: string; stack: string[]; geometryCoordinates: number[]; email: string; username: string; }} datas
+		 */
 		this.user = {
-			country: datas.country,
-			zipcode: datas.zipcode,
-			shortZipcode: datas.shortZipcode,
-			city: datas.city,
-			specialty: datas.specialty,
-			stack: datas.stack,
+			country: '',
+			zipcode: '',
+			shortZipcode: '',
+			city: '',
+			specialty: '',
+			stack: [''],
 			geometryType: 'Point',
-			geometryCoordinates: [datas.longitude, datas.latitude],
+			geometryCoordinates: [0, 0],
 			user: {
-				email: datas.email,
-				username: datas.username,
+				email: '',
+				username: '',
 				active: false
 			}
 		};
@@ -25,7 +25,7 @@ class userModel {
 	}
 
 	/**
-	 * @param {{ email: string, username: string; country: string; zipcode: string; shortZipcode: string; city: string; specialty: string; stack: string[]; longitude: number; latitude: number; }} datas
+	 * @param {{ country: string; zipcode: string; shortZipcode: string; city: string; specialty: string; stack: string[]; geometryCoordinates: number[]; email: string; username: string; }} datas
 	 */
 	setUser(datas) {
 		this.user = {
@@ -36,13 +36,15 @@ class userModel {
 			specialty: datas.specialty,
 			stack: datas.stack,
 			geometryType: 'Point',
-			geometryCoordinates: [datas.longitude, datas.latitude],
+			geometryCoordinates: datas.geometryCoordinates,
 			user: {
 				email: datas.email,
 				username: datas.username,
 				active: false
 			}
 		};
+
+		return this.user;
 	}
 }
 

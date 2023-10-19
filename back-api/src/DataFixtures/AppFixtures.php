@@ -54,7 +54,8 @@ class AppFixtures extends Fixture
 
         $admin = new User();
         $admin->setUsername('anørak');
-        $admin->setEmail($this->encoder->getPasswordHasher('bcrypt')->hash('admin@admin.fr'));
+        // $admin->setEmail($this->encoder->getPasswordHasher('bcrypt')->hash('admin@admin.fr'));
+        $admin->setEmail('admin@admin.fr');
         $admin->setActive(true);
         $admin->setRoles(['ROLE_ADMIN']);
 
@@ -78,9 +79,9 @@ class AppFixtures extends Fixture
             // We generate a fake username with faker
             $entity->setUsername($this->faker->userName);
             // We generate a fake email with faker and we encrypt it
-            $hashed = $this->encoder->getPasswordHasher('bcrypt')->hash($this->faker->email);
-            $entity->setEmail($hashed);
-            // $user->setEmail($hashedEmail);
+            // $hashed = $this->encoder->getPasswordHasher('bcrypt')->hash($this->faker->email);
+            // $entity->setEmail($hashed);
+            $entity->setEmail($this->faker->email);
             $entity->setActive(true);
             $entity->setRoles(['ROLE_USER']);
 

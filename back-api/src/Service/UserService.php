@@ -5,8 +5,10 @@ namespace App\Service;
 use App\Entity\User;
 use App\Entity\UserDetail;
 use Doctrine\ORM\EntityManagerInterface;
+use PHPUnit\Util\Json;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\PasswordHasher\Hasher\PasswordHasherFactory;
 
@@ -31,29 +33,26 @@ class UserService extends AbstractController
 		// We get the POST data
 		$data = json_decode($request->getContent(), true);
 
-		// We loop through the users to check if the user already exists
-		$users = $entityManager->getRepository(User::class)->findAll();
-		$usersEmails = [];
+		// We check if the user is already registered
+		$user = $entityManager->getRepository(User::class)->findOneBy(['email' => $data['user']['email']]);
 
-		foreach ($users as $user) {
-			$usersEmails[] = $user->getEmail();
+		// We throw an error if the user is already registered
+		if ($user) {
+			$responseCheck = new JsonResponse([
+				'status' => 400,
+				'title' => 'Error',
+				'message' => 'This email is already registered. Please try again with another email.'
+			]);
+
+			$responseCheck->headers->add([
+				'Content-Type' => 'text/plain',
+				'Access-Control-Allow-Origin' => '*',
+			]);
+			$responseCheck->prepare($request);
+			$responseCheck->send();
+
+			return $responseCheck;
 		}
-
-		foreach ($usersEmails as $userEmail) {
-			if ($this->encoder->getPasswordHasher('bcrypt')->verify($userEmail, $data['user']['email'])) {
-				$response = new Response();
-				$response->setStatusCode(400);
-				$response->setContent('User already exists');
-
-				return $response;
-			}
-		}
-
-		return new Response(
-			'User does not exist',
-			Response::HTTP_OK,
-			['content-type' => 'text/html']
-		);
 	}
 
 	public function createUser(Request $request, EntityManagerInterface $entityManager): Response
@@ -67,7 +66,8 @@ class UserService extends AbstractController
 		$userDetailEntity = new UserDetail();
 
 		$userEntity->setUsername($data['user']['username']);
-		$userEntity->setEmail($hashedEmail);
+		// $userEntity->setEmail($hashedEmail);
+		$userEntity->setEmail($data['user']['email']);
 		$userEntity->setActive(false);
 		$userEntity->setRoles(['ROLE_USER']);
 
@@ -87,20 +87,42 @@ class UserService extends AbstractController
 
 		$entityManager->flush();
 
+
 		// We check if the user has been created
-		$user = $entityManager->getRepository(User::class)->findOneBy(['email' => $hashedEmail]);
+		$user = $entityManager->getRepository(User::class)->findOneBy(['email' => $data['user']['email']]);
 
 		// We throw an error if the user has not been created
 		if (!$user) {
-			$response = new Response();
-			$response->setStatusCode(400);
-			$response->setContent('User not created');
+			$response = new JsonResponse([
+				'status' => 400,
+				'title' => 'Error',
+				'message' => 'An error occurred while creating your account. Please try again.'
+			]);
 
+			$response->headers->add([
+				'Content-Type' => 'text/plain',
+				'Access-Control-Allow-Origin' => '*',
+			]);
+			$response->prepare($request);
 			$response->send();
 
 			return $response;
 		}
 
-		return new Response();
+		// We send a confirmation email to the user
+		$response = new JsonResponse([
+			'status' => 200,
+			'title' => 'Success',
+			'message' => 'Congratulations' . ' ' . $user->getUsername() . '!' . ' ' . 'Your account has been created successfully. Go check your email in order to activate your account.',
+		]);
+
+		$response->headers->add([
+			'Content-Type' => 'text/plain',
+			'Access-Control-Allow-Origin' => '*',
+		]);
+		$response->prepare($request);
+		$response->send();
+
+		return $response;
 	}
 }

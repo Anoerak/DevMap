@@ -1,5 +1,3 @@
-@import '../../lib/style/abstracts/variables.scss';
-
 header {
 	height: 4rem;
 	-webkit-backdrop-filter: blur(15px) saturate(86%);
@@ -126,6 +124,17 @@ header {
 
 		button {
 			margin-right: 2rem;
+			padding: 0.5rem 1rem;
+			border-radius: 1rem;
+			border: none;
+			background-color: $color-dark;
+			color: $color-light;
+			transition: $default-transition;
+
+			&:hover {
+				transform: scale(1.1);
+				background-color: $color-dark-2;
+			}
 		}
 	}
 

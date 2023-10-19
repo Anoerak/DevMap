@@ -1,6 +1,6 @@
 <script>
 	import { page } from '$app/stores';
-	import { emojis } from '../lib/emojis';
+	import { emojis } from '$lib/emojis';
 </script>
 
 <section id="error">
@@ -12,18 +12,18 @@
 </section>
 
 
-<style>
+<style lang=scss>
 	section#error {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		height: calc(100vh - 4rem);
-	}
-	h1 {
-		font-size: 3rem;
-	}
-	h2 {
-		font-size: 2rem;
+		h1 {
+			font-size: 3rem;
+		}
+		h2 {
+			font-size: 2rem;
+		}
 	}
 </style>

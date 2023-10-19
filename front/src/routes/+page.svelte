@@ -1,54 +1,65 @@
 <script>
+	/*----------------------
+	|	IMPORTS
+	----------------------*/
 	import Map from '../components/map/+page.svelte';
-	import apiServer from '../hooks/apiServer';
+	import { getAllUsers } from './api/backend/+server';
+ 	import { onMount, getContext } from 'svelte';
 
-	// We check how user has an active status set to true
-	const jsonApi = new apiServer();
-	const getActiveUser = async () => {
-		const user = await jsonApi.getAllUsers();
-		let userCounter = 0;
-		user.features.forEach((/** @type {{ properties: { active: boolean; }; }} */ element) => {
-			if (element.properties.active === true) {
-				userCounter++;
-			}
-		});
-		return userCounter;
-	};
+	/*----------------------
+	|	VARIABLES
+	----------------------*/
+	const store = getContext('store');
+	
+	/*----------------------
+	|	FUNCTIONS
+	----------------------*/
+	onMount(() => {
+		getAllUsers()
+			.then((/** @type {{ features: any; }} */ user) => {
+
+				user.features.forEach((/** @type {{ properties: { active: boolean; }; }} */ element) => {
+					if (element.properties.active === true) {
+						store.update((/** @type {{ userCounter: number; dataset: { type: string; features: any[]; }; }} */ store) => {
+							store.userCounter++;
+							return store;
+						});
+					}
+				});
+
+				user.features.forEach((/** @type {{ properties: { active: boolean; }; }} */ element) => {
+					store.update((/** @type {{ userCounter: number; dataset: { type: string; features: any[]; }; }} */ store) => {
+						store.dataset.features.push(element);
+						return store;
+					});
+				});
+				
+			})
+			.catch((/** @type {{ message: any; }} */ error) => {
+				console.log(error.message);
+			});
+	});
 </script>
 
 <section id="home">
+	<div class="header"></div>
 	<h1>DevMap</h1>
-	<h2>{#await getActiveUser()}
-			<i class="fa-solid fa-spinner fa-spin-pulse" style="color: #1e3050;"></i>
-			<p>Loading...</p>
-		{:then userCounter}
-			{userCounter} users are active
-		{:catch error}
-			<p>{error.message}</p>
-		{/await}
-
+	<h2>
+		<!-- While loading data, we display an icon -->
+		{#if !$store.userCounter}
+			<i class="fas fa-spinner fa-spin"></i>
+		{:else if $store.userCounter === 0}
+			No active users
+		{:else if $store.userCounter === 1}
+			{$store.userCounter} active user
+		{:else}
+			{$store.userCounter} active users
+		{/if}
+	</h2>
 
 	<Map />
-
 </section>
 
-<style type="text/scss">
-	section#home {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		height: calc(100vh - 4rem);
-	}
-	h1 {
-		font-size: 3rem;
-		text-align: center;
-	}
-	h2 {
-		font-size: 2rem;
-		text-align: center;
-	}
-	.fa-solid {
-		margin: 1rem;
-	}
+<style lang="scss">
+	@import './home.scss';
 </style>

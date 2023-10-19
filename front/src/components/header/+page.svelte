@@ -1,8 +1,8 @@
 <script>
 	import { page } from '$app/stores';
 	import { afterUpdate } from 'svelte';
-	import Logo from '../../lib/img/logo.webp';
-	import MenuSvg from '../../lib/img/svg/menu.svg';
+	import Logo from '$lib/img/logo.webp';
+	import MenuSvg from '$lib/img/svg/menu.svg';
 	import Modal from '../modal/+page.svelte';
 	import RegisterForm from '../register_form/+page.svelte';
 

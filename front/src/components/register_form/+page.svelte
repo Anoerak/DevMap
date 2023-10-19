@@ -1,59 +1,84 @@
 <script>
-	// We import our model
+// @ts-nocheck
+
+	import { onMount, getContext } from 'svelte';
+	/*----------------------
+	|	IMPORTS
+	----------------------*/
 	// @ts-ignore
 	import userModel from '../../models/userModel.js';
-	// We import our api
-	import apiServer from '../../hooks/apiServer.js';
-	import apiGeoLoc from '../../hooks/apiGeoLoc.js';
+
+	import { getAllCountry, getAllStack, createUser } from '../../routes/api/backend/+server';
+	import { getCoordByZipCountry } from '../../routes/api/openweather/+server';
 	import { error } from '@sveltejs/kit';
 
+	/*----------------------
+	|	DECLARATIONS (VARIABLES)
+	----------------------*/
+	const store = getContext('store');
 	
-	// We create a new instance of our api
-	const api = new apiServer();
-	const apiGeo = new apiGeoLoc();
+	/**
+	 * @type {any[]}
+	 */
+	let countries = [],
+		/**
+		 * @type {string[]}
+		*/
+		stack = [],
+		/**
+		 * @type {any}
+		 * */
+		geoDatas = {
+			country: '',
+			zipcode: '',
+			name: '',
+			lat: 0,
+			lon: 0,
+		},
+		/**
+		 * @type {string[]}
+		 * */
+		stackSelection = [],
+		/**
+		 * @type {any}
+		 * */
+		// @ts-ignore
+		response = {},
+		/**
+		 * @type {Object}
+		 * */
+		user = {};
 
-	/**
-	 * @type {any[]}
-	 */
-	const countries = [];
-	/**
-	 * @type {any[]}
-	 */
-	const stack = [];
-	/**
-	 * @type {any}
-	 */
-	const geoDatas = {
-		country: '',
-		zipcode: '',
-		name: '',
-		lat: 0,
-		lon: 0,
-	};
-	
-	const countriesList = async () => {
-		const country = await api.getAllCountry();
-		country.forEach((/** @type {any} */ element) => {
-			countries.push(element);
-		});
-		return countries;
+	/*----------------------
+	|	FUNCTIONS
+	----------------------*/
+	const countriesList = async() => {
+		countries = await getAllCountry();
 	};
 
 	const stackList = async () => {
-		const stackPromise = await api.getAllStack();
-
-		stackPromise.forEach((/** @type {any} */ element) => {
-			stack.push(element.name);
-		});
-		stack.sort();
-		return stack;
+		stack = await getAllStack();
+		stack.sort(
+			/** @type {Object} */
+			(a, b) => {
+				if(a.name < b.name) {
+					return -1;
+				}
+				if(a.name > b.name) {
+					return 1;
+				}
+				return 0;
+			}
+		);
 	};
 
 	const geoList = async (/** @type {string} */ zip, /** @type {string} */ country) => {
-		const geoPromise = await apiGeo.getCoordByZipCountry(zip, country);
+		const geoPromise = await getCoordByZipCountry(zip, country);
 		if(geoPromise.error) {
 			const errorSpan = document.querySelector('.error');
+			// @ts-ignore
 			errorSpan.innerHTML = 'Zipcode not found, use the ISO alpha-2 zipcode please';
+			// @ts-ignore
 			errorSpan.style.display = 'block';
 			throw error(geoPromise.code, `Something's wrong with your location datas. Please check your inputs!`);
 		}
@@ -65,25 +90,19 @@
 		return geoDatas;
 	};
 
-	/**
-	 * @type {any[]}
-	 */
-	const stackSelection = [];
-
 	const registerStackSelection = (/** @type {any} */ form) => {
 		const stackSelect = form.elements.stack;
-		for (let i = 0; i < stackSelect.length; i++) {
-			if (stackSelect[i].selected) {
-				stackSelection.push(stackSelect[i].value);
+		stackSelect.forEach((/** @type {{ checked: any; value: string; }} */ element) => {
+			if(element.checked) {
+				stackSelection.push(element.value);
 			}
-		}
+		});
 		return stackSelection;
 	};
 
-	// We collect the datas from the POST
 	const handleSubmit = async (/** @type {Event} */ event) => {
 		event.preventDefault();
-		const form = event.target;
+		const form = event.currentTarget;
 		const formData = new FormData(form);
 		registerStackSelection(form);
 		const data = Object.fromEntries(formData);
@@ -98,19 +117,24 @@
 			specialty: data.specialty.toString(),
 			stack: stackSelection,
 			geometryType: 'Point',
-			longitude: geoDatas.lat, 
-			latitude: geoDatas.lon,
+			geometryCoordinates: [geoDatas.lon, geoDatas.lat],
 			email: data.email.toString(),
 			username: data.username.toString()
 		};
 
-		const user = new userModel(dataToSend);
+		user = new userModel().setUser(dataToSend);
 
-		console.log(user.user);
-		
-		await api.postUser(user.user);
+		response = await createUser(user);
+
+		return response;
 	};
+	
+	onMount(() => {
+		countriesList();
+		stackList();
+	});
 </script>
+
 
 <form
 	method="POST"
@@ -140,11 +164,11 @@
 		id="country"
 		required
 	>
-		{#await countriesList()}
+		{#await countries}
 			<option value="">Loading...</option>
 		{:then country}
-			{#each country as country}
-				<option value="{country.Code}">{country.Name}</option>
+			{#each country as c}
+				<option value={c.Code}>{c.Name}</option>
 			{/each}
 		{:catch error}
 			<p>{error.message}</p>
@@ -172,23 +196,25 @@
 		<option value="Fullstack">Fullstack</option>
 	</select>
 
-	<label for="stack">Your stack</label>
-	<select 
-		name="stack" 
+	<!-- <label for="stack">Your stack</label> -->
+	<fieldset
+		name="stack"
 		id="stack"
-		multiple
-		required
 	>
-		{#await stackList()}
-			<option value="">Loading...</option>
-		{:then stack}
-			{#each stack as stack}
-				<option value="{stack}">{stack}</option>
-			{/each}
-		{:catch error}
-			<p>{error.message}</p>
+		<legend>Your stack</legend>
+		{#await stack}
+			<p>Loading...</p>
+			{:then s}
+				{#each s as st}
+					<div class="input__container">
+					<label for={st.name}>{st.name}</label>
+					<input type="checkbox" name="stack" id={st.name} value={st.name} multiple>
+					</div>
+				{/each}
+			{:catch error}
+				<p>{error.message}</p>
 		{/await}
-	</select>
+	</fieldset>
 
 
 	<button 
@@ -202,52 +228,6 @@
 </form>
 
 
-
-<style>
-	@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-
-	* {
-		box-sizing: border-box;
-	}
-
-	form {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-
-	label {
-		font-family: 'Roboto', sans-serif;
-		margin-top: 1rem;
-	}
-
-	input, select {
-		font-family: 'Roboto', sans-serif;
-		margin-top: 0.5rem;
-		padding: 0.5rem;
-		border: 1px solid #ccc;
-		border-radius: 0.5rem;
-	}
-
-	button {
-		font-family: 'Roboto', sans-serif;
-		margin-top: 1rem;
-		padding: 0.5rem;
-		border: 1px solid #ccc;
-		border-radius: 0.5rem;
-		background-color: #ccc;
-		cursor: pointer;
-	}
-
-	button:hover {
-		background-color: #fff;
-	}
-
-	.error {
-		display: none;
-		font-family: 'Roboto', sans-serif;
-		color: red;
-		margin-top: 1rem;
-
-	}
+<style lang="scss">
+	@import './register_form.scss';
 </style>
