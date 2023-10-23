@@ -1,0 +1,24 @@
+@include responsive('mobile-portrait') {
+
+	div.contact__form {
+		width: 80%;
+
+		.header {
+			.logo {
+				img {
+					width: 30px;
+					margin-top: 35px;
+				}
+			}
+		}
+
+		form {
+			padding: 0;
+
+			.input__container {
+				width: 90%;
+			}
+		}
+	}
+
+}

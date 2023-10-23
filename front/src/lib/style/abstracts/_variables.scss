@@ -1,5 +1,6 @@
-// Colors
-
+/*-------------------------
+|	Colors
+---------------------------*/
 // Primary
 $color-primary: #f5f5f5;
 $color-primary-dark: #e0e0e0;
@@ -40,9 +41,33 @@ $color-info: #65d5f7;
 $color-info-dark: #48a3ac;
 $color-info-light: #61e0ff;
 
-
+/*-------------------------
+|	Transitions
+---------------------------*/
 // Transitions
-
-$default-transition: all 0.3s ease-in-out;
+$default-transition: all 0.25s ease-in-out;
 $default-transition-slow: all 0.5s ease-in-out;
 $default-transition-fast: all 0.1s ease-in-out;
+
+/*-------------------------
+|	Buttons Colors
+---------------------------*/
+// Confirm button
+$confirm-button-color: $color-light;
+$confirm-button-background-color: $color-secondary;
+$confirm-button-border-color: $color-secondary-dark;
+
+// Cancel button
+$cancel-button-color: $color-secondary;
+$cancel-button-background-color: $color-light-2;
+$cancel-button-border-color: $color-dark-2;
+
+// Delete button
+$delete-button-color: $color-light;
+$delete-button-background-color: $color-danger;
+$delete-button-border-color: $color-danger-dark;
+
+// Change button
+$change-button-color: $color-light;
+$change-button-background-color: $color-secondary-dark;
+$change-button-border-color: $color-secondary;

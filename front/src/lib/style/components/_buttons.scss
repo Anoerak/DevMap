@@ -1,0 +1,100 @@
+.main__button {
+	padding: 0.5rem 1rem;
+	border: none;
+	border-radius: 10rem;
+	/*Typography stuff*/
+	font-size: 1rem;
+	font-weight: 500;
+	/*Manipulations stuff*/
+	transition: $default-transition;
+	/*Miscellaneous*/
+	cursor: pointer;
+	text-decoration: none;
+	/*Box model stuff*/
+	background-color: $color-secondary;
+	/*Typography stuff*/
+	color: $color-light;
+
+	&:hover {
+		transform: scale(1.1);
+	}
+}
+
+.main__button__light {
+	padding: 0.5rem 1rem;
+	border: none;
+	border-radius: 10rem;
+	/*Typography stuff*/
+	font-size: 1rem;
+	font-weight: 500;
+	/*Manipulations stuff*/
+	transition: $default-transition;
+	/*Miscellaneous*/
+	cursor: pointer;
+	text-decoration: none;
+	/*Box model stuff*/
+	background-color: $color-secondary;
+	/*Typography stuff*/
+	color: $color-light;
+
+	&:hover {
+		transform: scale(1.1);
+		background-color: $color-secondary-light;
+		color: $color-light;
+	}
+}
+
+.alert__button {
+	text-decoration: none;
+	background-color: $color-warning-dark;
+	color: $color-light;
+	border: none;
+	border-radius: 0.5rem;
+	margin: 0 0.5rem;
+	padding: 0.5rem 1rem;
+	font-size: 1rem;
+	font-weight: 500;
+	cursor: pointer;
+	transition: $default-transition;
+
+	&:hover {
+		background-color: $color-warning-light;
+		color: $color-light;
+
+		&:disabled {
+			background-color: $color-warning;
+		}
+	}
+}
+
+.delete__button {
+	text-decoration: none;
+	background-color: $color-danger;
+	color: $color-light;
+	border: none;
+	border-radius: 0.5rem;
+	margin: 0 0.5rem;
+	padding: 0.5rem 1rem;
+	font-size: 1rem;
+	font-weight: 500;
+	cursor: pointer;
+	transition: $default-transition;
+
+	:hover {
+		background-color: $color-danger-dark;
+		color: $color-light;
+
+		&:disabled {
+			background-color: $color-danger-light;
+		}
+	}
+}
+
+:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+:hover:disabled {
+	transform: none;
+}

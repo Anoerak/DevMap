@@ -9,7 +9,7 @@
 	 */
 	let dialog;
 
-	$: if ($store.showModal) {
+	$: if ($store.modals.showModal) {
 		dialog.showModal();
 	}
 	
@@ -17,10 +17,11 @@
 
 
 <!-- svelte-ignore a11y-click-events-have-key-events a11y-no-noninteractive-element-interactions -->
-<dialog
+<dialog 
+	id="dialog-modal"
 	class="dialog"
 	bind:this={dialog}
-	on:close={() => ($store.showModal = false)}
+	on:close={() => ($store.modals.showModal = false)}
 	on:click|self={() => dialog.close()}
 >
 	<!-- svelte-ignore a11y-no-static-element-interactions -->

@@ -1,0 +1,66 @@
+@include responsive('mobile-portrait') {
+	header#header {
+		position: fixed;
+
+		nav#nav-container {
+			display: none;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			background-color: hsla(221, 63%, 47%, .5);
+			backdrop-filter: blur(15px) saturate(86%);
+
+			ul {
+				padding: 3rem 1rem 1rem 1rem;
+				flex-direction: column;
+				border-radius: 0;
+				gap: 1rem;
+				width: 100%;
+
+				li {
+					align-items: flex-start;
+					min-width: 160px;
+					background-color: hsla(0, 0%, 100%, 0.39);
+					border-radius: 2rem;
+
+					&.responsive__register {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						min-width: 6rem;
+
+						button {
+							margin: 0;
+							width: 6rem;
+							padding: 0.5rem 1rem;
+							border: none;
+							border-radius: 10rem;
+							font-size: 1rem;
+							font-weight: 500;
+							transition: $default-transition;
+							cursor: pointer;
+						}
+					}
+
+					a {
+						font-size: 1.5rem;
+						width: 100%;
+						align-items: center;
+						justify-content: flex-start;
+						color: $color-dark;
+						margin: 0;
+					}
+				}
+			}
+		}
+
+		.register {
+			display: none !important;
+		}
+
+		.responsive__menu {
+			display: block;
+			position: relative;
+		}
+	}
+}

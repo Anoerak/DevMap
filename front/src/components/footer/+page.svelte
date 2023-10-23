@@ -5,7 +5,7 @@
 	import GitHub from '$lib/img/github.webp';
 	import GitLab from '$lib/img/gitlab.webp';
 	import LinkedIn from '$lib/img/Linkedin_logo.webp';
-	import { activateUser, deleteUser } from '../../routes/api/backend/+server.js';
+	import { _activateUser, _deleteUser } from '../../routes/api/backend/+server.js';
 	import { getContext } from 'svelte';
 
 	/*----------------------
@@ -13,20 +13,69 @@
 	----------------------*/
 	const store = getContext('store');
 
+	const updateStoreWithResponse = (/** @type {{ status: number; title: string; message: string; }} */ res) => {
+		store.update((/** @type {{ 
+				userCounter: number; 
+				dataset: { 
+					type: string; 
+					features: any[]; 
+				}; 
+				lastUser: {
+					lat: number; 
+					lng: number; 
+					zoom: number 
+				}; 
+				apiResponse: {
+					title: string; 
+					message: string; 
+					status: number
+				}; 
+				modals: { 
+					showModal: boolean; 
+					popUpModal: boolean 
+				};  
+			}} */ store) => {
+				// We use param1 to define if we increment or decrement the userCounter
+				store.apiResponse.status = res.status;
+				store.apiResponse.title = res.title;
+				store.apiResponse.message = res.message;
+				store.modals.popUpModal = true;
+				return store;
+			});
+	}
+
 	const userActivation = async () => {
 		const form = document.getElementById('form1');
 		const formData = new FormData(form);
 		const email = formData.get('email');
-		const response = await activateUser({
+		const response = await _activateUser({
 			email: email,
 		});
-		if(response.message === 'User activated') {
-			store.update((/** @type {{ userCounter: number; dataset: { type: string; features: any[]; }; lastUser: {lat: number; lng: number; zoom: number }; }} */ store) => {
-				store.userCounter++;
-				return store;
-			});
+		if(response.message === 'Your account has been activated.') {
+			updateStoreWithResponse(response)
 			// We change the status of the user into the store
-			store.update((/** @type {{ userCounter: number; dataset: { type: string; features: any[]; }; lastUser: {lat: number; lng: number; zoom: number }; }} */ store) => {
+			store.update((/** @type {{ 
+				userCounter: number; 
+				dataset: { 
+					type: string; 
+					features: any[]; 
+				}; 
+				lastUser: {
+					lat: number; 
+					lng: number; 
+					zoom: number 
+				}; 
+				apiResponse: {
+					title: string; 
+					message: string; 
+					status: number
+				}; 
+				modals: { 
+					showModal: boolean; 
+					popUpModal: boolean 
+				};  
+			}} */ store) => {	
+				store.userCounter++;			
 				store.dataset.features.forEach((/** @type {{ properties: { email: string; active: boolean; }; geometry: { coordinates: any[] }; }} */ element) => {
 					if (element.properties.email === email) {
 						element.properties.active = true;
@@ -38,13 +87,31 @@
 				});
 				return store;
 			});
-		} else if (response.message === 'User deactivated') {
-			store.update((/** @type {{ userCounter: number; dataset: { type: string; features: any[]; }; lastUser: {lat: number; lng: number; zoom: number }; }} */ store) => {
-				store.userCounter--;
-				return store;
-			});
+		} else if (response.message === 'Your account has been deactivated.') {
+				updateStoreWithResponse(response)
 			// We change the status of the user into the store
-			store.update((/** @type {{ userCounter: number; dataset: { type: string; features: any[]; }; lastUser: {lat: number; lng: number; zoom: number }; }} */ store) => {
+			store.update((/** @type {{ 
+				userCounter: number; 
+				dataset: { 
+					type: string; 
+					features: any[]; 
+				}; 
+				lastUser: {
+					lat: number; 
+					lng: number; 
+					zoom: number 
+				}; 
+				apiResponse: {
+					title: string; 
+					message: string; 
+					status: number
+				}; 
+				modals: { 
+					showModal: boolean; 
+					popUpModal: boolean 
+				};  
+			}} */ store) => {
+				store.userCounter--;
 				store.dataset.features.forEach((/** @type {{ properties: { email: string; active: boolean; }; geometry: { coordinates: any[] }; }} */ element) => {
 					if (element.properties.email === email) {
 						element.properties.active = false;
@@ -56,9 +123,8 @@
 				});
 				return store;
 			});
-			alert('Your profile has been deactivated');
 		} else {
-			alert('Something went wrong.' + '\n' + response.message);
+			updateStoreWithResponse(response)
 		}
 	};
 
@@ -71,17 +137,66 @@
 		const form = document.getElementById('form1');
 		const formData = new FormData(form);
 		const email = formData.get('email');
-		const response = await deleteUser({
+		const response = await _deleteUser({
 			email: email,
 		});
 
-		if(response.message === 'User deleted') {
-			store.update((/** @type {{ userCounter: number; dataset: { type: string; features: any[]; }; lastUser: {lat: number; lng: number; zoom: number }; }} */ store) => {
-				store.userCounter--;
+		if(response.message === 'Your account has been deleted successfully.') {
+			store.update((/** @type {{ 
+				userCounter: number; 
+				dataset: { 
+					type: string; 
+					features: any[]; 
+				}; 
+				lastUser: {
+					lat: number; 
+					lng: number; 
+					zoom: number 
+				}; 
+				apiResponse: {
+					title: string; 
+					message: string; 
+					status: number
+				}; 
+				modals: { 
+					showModal: boolean; 
+					popUpModal: boolean 
+				};  
+			}} */ store) => {
+				const user = store.dataset.features.filter((/** @type {{ properties: { email: string; }; }} */ element) => {
+					return element.properties.email === email;
+				});
+				if(user[0].properties.active){
+					store.userCounter--;
+				}
+				store.apiResponse.status = response.status;
+				store.apiResponse.title = response.title;
+				store.apiResponse.message = response.message;
+				store.modals.popUpModal = true;
 				return store;
 			});
 			// We change the status of the user into the store
-			store.update((/** @type {{ userCounter: number; dataset: { type: string; features: any[]; }; lastUser: {lat: number; lng: number; zoom: number }; }} */ store) => {
+			store.update((/** @type {{ 
+				userCounter: number; 
+				dataset: { 
+					type: string; 
+					features: any[]; 
+				}; 
+				lastUser: {
+					lat: number; 
+					lng: number; 
+					zoom: number 
+				}; 
+				apiResponse: {
+					title: string; 
+					message: string; 
+					status: number
+				}; 
+				modals: { 
+					showModal: boolean; 
+					popUpModal: boolean 
+				};  
+			}} */ store) => {				
 				store.dataset.features.forEach((/** @type {{ properties: { email: string; active: boolean; }; geometry: { coordinates: any[] }; }} */ element) => {
 					if (element.properties.email === email) {
 						element.properties.active = false;
@@ -93,9 +208,34 @@
 				});
 				return store;
 			});
-			alert('Your profile has been deleted');
 		} else {
-			alert('Something went wrong.' + '\n' + response.message);
+			store.update((/** @type {{ 
+				userCounter: number; 
+				dataset: { 
+					type: string; 
+					features: any[]; 
+				}; 
+				lastUser: {
+					lat: number; 
+					lng: number; 
+					zoom: number 
+				}; 
+				apiResponse: {
+					title: string; 
+					message: string; 
+					status: number
+				}; 
+				modals: { 
+					showModal: boolean; 
+					popUpModal: boolean 
+				};  
+			}} */ store) => {
+				store.apiResponse.status = response.status;
+				store.apiResponse.title = response.title;
+				store.apiResponse.message = response.message;
+				store.modals.popUpModal = true;
+				return store;
+			});
 		}
 	};
 </script>
@@ -105,7 +245,7 @@
 
 </style>
 
-<footer>
+<footer id="footer">
 	<div class="website">
 		<h2>Website</h2>
 		<ul>

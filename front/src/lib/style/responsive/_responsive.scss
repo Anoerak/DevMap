@@ -1,0 +1,9 @@
+@include responsive('mobile-portrait') {
+	body {
+		main {
+			.popup__modal {
+				width: 90%;
+			}
+		}
+	}
+}

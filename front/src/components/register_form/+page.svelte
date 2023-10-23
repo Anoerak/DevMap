@@ -1,14 +1,14 @@
 <script>
-// @ts-nocheck
+	// @ts-nocheck
 
-	import { onMount, getContext, afterUpdate } from 'svelte';
 	/*----------------------
 	|	IMPORTS
 	----------------------*/
 	// @ts-ignore
 	import userModel from '../../models/userModel.js';
-	import { getAllCountry, getAllStack, createUser } from '../../routes/api/backend/+server';
-	import { getCoordByZipCountry } from '../../routes/api/openweather/+server';
+	import { onMount, getContext } from 'svelte';
+	import { _getAllCountry, _getAllStack, _createUser } from '../../routes/api/backend/+server';
+	import { _getCoordByZipCountry } from '../../routes/api/openweather/+server';
 	import { error } from '@sveltejs/kit';
 
 	/*----------------------
@@ -18,7 +18,27 @@
 
 	$: if(response) {
 		if(response.status === 200) {
-			store.update((/** @type {{ userCounter: number; dataset: { type: string; features: any[]; }; mapboxDataset: { type: string; features: any[]; }; lastUser: { lat: number; lng: number; zoom: number;};  }} */ store) => {
+			store.update((/** @type {{ 
+				userCounter: number; 
+				dataset: { 
+					type: string; 
+					features: any[]; 
+				}; 
+				lastUser: {
+					lat: number; 
+					lng: number; 
+					zoom: number 
+				}; 
+				apiResponse: {
+					title: string; 
+					message: string; 
+					status: number
+				}; 
+				modals: { 
+					showModal: boolean; 
+					popUpModal: boolean 
+				};  
+			}} */ store) => {				
 				const dataUser = {
 					type: 'Feature',
 					id: Math.random(),
@@ -41,25 +61,57 @@
 						]
 					}
 				};
-				console.log(dataUser);
 				store.dataset.features.push(dataUser);
 				store.lastUser.lat = geoDatas.lat;
 				store.lastUser.lng = geoDatas.lon;
 				store.lastUser.zoom = 10;
+				store.apiResponse.status = response.status;
+				store.apiResponse.title = response.title;
 				store.apiResponse.message = response.message;
-				store.apiResponse.data = response.data;
-				store.showModal = false;
+				store.modals.showModal = false;
+				store.modals.popUpModal = true;
 				return store;
 			});
+			// We close the modal
+			// @ts-ignore
+			const modal = document.querySelector('.dialog');
+			modal.close();
 		}
 
 		if(response.status === 400) {
-			store.update((/** @type {{ userCounter: number; dataset: { type: string; features: any[]; }; mapboxDataset: { type: string; features: any[]; }; lastUser: { lat: number; lng: number; zoom: number;};  }} */ store) => {
+			store.update((/** @type {{ 
+				userCounter: number; 
+				dataset: { 
+					type: string; 
+					features: any[]; 
+				}; 
+				lastUser: {
+					lat: number; 
+					lng: number; 
+					zoom: number 
+				}; 
+				apiResponse: {
+					title: string; 
+					message: string; 
+					status: number
+				}; 
+				modals: { 
+					showModal: boolean; 
+					popUpModal: boolean 
+				};  
+			}} */ store) => {				
+				store.apiResponse.status = response.status;
+				store.apiResponse.title = response.title;
 				store.apiResponse.message = response.message;
-				store.apiResponse.data = response.data;
-				store.showModal = false;
 				return store;
 			});
+			// We display the error message
+			// @ts-ignore
+			const errorSpan = document.querySelector('.error');
+			// @ts-ignore
+			errorSpan.innerHTML = `<h3>${response.title}</h3><p>${response.message}</p>`;
+			// @ts-ignore
+			errorSpan.style.display = 'block';
 		}
 
 	}
@@ -100,11 +152,11 @@
 	|	FUNCTIONS
 	----------------------*/
 	const countriesList = async() => {
-		countries = await getAllCountry();
+		countries = await _getAllCountry();
 	};
 
 	const stackList = async () => {
-		stack = await getAllStack();
+		stack = await _getAllStack();
 		stack.sort(
 			/** @type {Object} */
 			(a, b) => {
@@ -117,10 +169,11 @@
 				return 0;
 			}
 		);
+		console.log(stack);
 	};
 
 	const geoList = async (/** @type {string} */ zip, /** @type {string} */ country) => {
-		const geoPromise = await getCoordByZipCountry(zip, country);
+		const geoPromise = await _getCoordByZipCountry(zip, country);
 		if(geoPromise.error) {
 			const errorSpan = document.querySelector('.error');
 			// @ts-ignore
@@ -171,7 +224,7 @@
 
 		user = new userModel().setUser(dataToSend);
 
-		response = await createUser(user);
+		response = await _createUser(user);
 
 		return { user, response };
 	};
@@ -184,6 +237,7 @@
 
 
 <form
+	id="register-form"
 	method="POST"
 	on:submit|preventDefault={
 		handleSubmit

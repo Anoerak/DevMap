@@ -24,10 +24,14 @@
 			zoom: 5,
 		},
 		apiResponse: {
+			status: 0,
+			title: '',
 			message: '',
-			data: {},
 		},
-		showModal: false,
+		modals: {
+			showModal: false,
+			popUpModal: false,
+		}
 	});
 
 	$: store.subscribe((/** @type {{ userCounter: number; dataset: { type: string; features: any[]; }; mapboxDataset: { type: string; features: any[]; }; lastUser: { lat: number; lng: number; zoom: number;};  }} */ store) => {
@@ -49,6 +53,21 @@
 <Header />
 
 <main>
+	<!-- svelte-ignore a11y-click-events-have-key-events a11y-no-noninteractive-element-interactions -->
+	<dialog 
+		class="popup__modal"
+		open={$store.modals.popUpModal}
+		on:click|self={() => $store.modals.popUpModal = false}
+	>
+	<div>
+		<h1>{$store.apiResponse.title}</h1>
+		<p>{$store.apiResponse.message}</p>
+	</div>
+	<button
+	class="close__button"
+		on:click={() => $store.modals.popUpModal = false}
+	>x</button>
+	</dialog>
 	<slot>
 	</slot>
 </main>

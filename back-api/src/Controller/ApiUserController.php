@@ -47,11 +47,11 @@ class ApiUserController extends AbstractController
 
         if (!$user) {
             $response = new JsonResponse([
+                'title' => 'Something went wrong..',
                 'message' => 'User not found'
             ], 404);
 
             $response->headers->add([
-                'Content-Type' => 'text/plain',
                 'Access-Control-Allow-Origin' => '*',
             ]);
             $response->prepare($request);
@@ -69,12 +69,8 @@ class ApiUserController extends AbstractController
 
             $response = new JsonResponse([
                 "status" => 200,
-                "message" => "User deactivated",
-                "statusText" => "user deactivated",
-                "data" => [
-                    "username" => $user->getUsername(),
-                    "isActive" => $user->isActive()
-                ]
+                "title" => 'All done ' . $user->getUsername() . ' !',
+                "message" => 'Your account has been deactivated.',
             ], 200);
         } else {
             $user->setActive(true);
@@ -84,17 +80,13 @@ class ApiUserController extends AbstractController
 
             $response = new JsonResponse([
                 "status" => 200,
-                "message" => "User activated",
-                "statusText" => "user activated",
-                "data" => [
-                    "username" => $user->getUsername(),
-                    "isActive" => $user->isActive()
-                ]
+                "title" => 'All done ' . $user->getUsername() . ' !',
+                "message" => 'Your account has been activated.',
             ], 200);
         }
 
         $response->headers->add([
-            'Content-Type' => 'text/plain',
+            'Content-Type' => 'application/json',
             'Access-Control-Allow-Origin' => '*',
         ]);
         $response->prepare($request);
@@ -117,11 +109,12 @@ class ApiUserController extends AbstractController
         // We delete the User and its UserDetail
         if (!$user || !$userDetail) {
             $response = new JsonResponse([
-                'message' => 'User not found'
+                'status' => 404,
+                'title' => 'Something went wrong..',
+                'message' => 'User not found.'
             ], 404);
 
             $response->headers->add([
-                'Content-Type' => 'text/plain',
                 'Access-Control-Allow-Origin' => '*',
             ]);
             $response->prepare($request);
@@ -136,16 +129,17 @@ class ApiUserController extends AbstractController
         $entityManager->flush();
 
         // We check that the User and its UserDetail have been deleted
-        $user = $entityManager->getRepository(User::class)->findOneBy(['email' => $data['email']]);
-        $userDetail = $entityManager->getRepository(UserDetail::class)->findOneBy(['user' => $user]);
+        $userCheck = $entityManager->getRepository(User::class)->findOneBy(['email' => $data['email']]);
+        $userDetailCheck = $entityManager->getRepository(UserDetail::class)->findOneBy(['user' => $user]);
 
-        if ($user || $userDetail) {
+        if ($userCheck || $userDetailCheck) {
             $response = new JsonResponse([
-                'message' => 'User not deleted'
+                'status' => 400,
+                'title' => 'Something went wrong..',
+                'message' => 'User not deleted.'
             ], 400);
 
             $response->headers->add([
-                'Content-Type' => 'text/plain',
                 'Access-Control-Allow-Origin' => '*',
             ]);
             $response->prepare($request);
@@ -156,11 +150,12 @@ class ApiUserController extends AbstractController
 
 
         $response = new JsonResponse([
-            'message' => 'User deleted'
+            'status' => 200,
+            'title' => 'All done ' . $user->getUsername() . ' !',
+            'message' => 'Your account has been deleted successfully.'
         ], 200);
 
         $response->headers->add([
-            'Content-Type' => 'text/plain',
             'Access-Control-Allow-Origin' => '*',
         ]);
         $response->prepare($request);

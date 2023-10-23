@@ -3,7 +3,7 @@
 	|	IMPORTS
 	----------------------*/
 	import Map from '../components/map/+page.svelte';
-	import { getAllUsers } from './api/backend/+server';
+	import { _getAllUsers } from './api/backend/+server';
  	import { onMount, getContext } from 'svelte';
 
 	/*----------------------
@@ -15,7 +15,7 @@
 	|	FUNCTIONS
 	----------------------*/
 	onMount(() => {
-		getAllUsers()
+		_getAllUsers()
 			.then((/** @type {{ features: any; }} */ user) => {
 
 				user.features.forEach((/** @type {{ properties: { active: boolean; }; }} */ element) => {
@@ -43,7 +43,9 @@
 
 <section id="home">
 	<div class="header"></div>
-	<h1>DevMap</h1>
+	<h1>
+		<span class="dev__title">Dev.</span><span class="map__title">map</span><span class="parenthesis__title">(</span><span class="developers__title">developers </span><span class="arrow__title"> =&gt; </span><span class="bracket__title">&#123;</span><span class="dot__title"> ... </span><span class="bracket__title">&#125;</span><span class="parenthesis__title">)</span>
+	</h1>
 	<h2>
 		<!-- While loading data, we display an icon -->
 		{#if !$store.userCounter}

@@ -1,17 +1,30 @@
-@media screen and (max-width: 776px) and (orientation: portrait) {
-	body {
-		footer {
-			width: calc(100% - 2rem);
-			flex-wrap: wrap;
-			justify-content: space-between;
-			margin: 0;
-			padding: 0 1rem;
-			height: auto;
+@include responsive('mobile-portrait') {
+	footer#footer {
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: 0;
+		padding: 1rem 1.5rem;
+		height: auto;
 
-			.website h2,
-			.social h2,
-			.newsletter h2 {
+		.website,
+		.social,
+		.profile {
+			h2 {
 				font-size: 1.25rem;
+			}
+		}
+
+		.profile {
+			form {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				align-items: center;
+				justify-content: space-between;
+
+				.profile__input {
+					width: 100%;
+				}
 			}
 		}
 	}

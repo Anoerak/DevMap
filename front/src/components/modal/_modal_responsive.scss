@@ -1,0 +1,5 @@
+@include responsive('mobile-portrait') {
+	#dialog-modal.dialog {
+		max-width: 90%;
+	}
+}

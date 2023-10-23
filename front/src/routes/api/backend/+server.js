@@ -3,7 +3,7 @@ import { API_URL } from '../../../config/config.local';
 /*--------------------------
 |		GET
 --------------------------*/
-export function getAllCountry() {
+export function _getAllCountry() {
 	const url = `${API_URL}/countries`;
 
 	let response = fetch(url, {
@@ -20,7 +20,7 @@ export function getAllCountry() {
 	return response;
 }
 
-export function getAllStack() {
+export function _getAllStack() {
 	const url = `${API_URL}/tech_stacks`;
 
 	let response = fetch(url, {
@@ -37,7 +37,7 @@ export function getAllStack() {
 	return response;
 }
 
-export function getOneUser(/** @type {string} */ id) {
+export function _getOneUser(/** @type {string} */ id) {
 	const url = `${API_URL}/user_details/${id}`;
 
 	let response = fetch(url, {
@@ -54,7 +54,7 @@ export function getOneUser(/** @type {string} */ id) {
 	return response;
 }
 
-export function getAllUsers() {
+export function _getAllUsers() {
 	const url = `${API_URL}/getAllGeojson`;
 
 	let response = fetch(url, {
@@ -74,7 +74,7 @@ export function getAllUsers() {
 /*--------------------------
 |		POST
 --------------------------*/
-export async function createUser(/** @type {Object} */ data) {
+export async function _createUser(/** @type {Object} */ data) {
 	const url = `${API_URL}/user`;
 
 	// We send the data to the server and get the response to display it
@@ -95,7 +95,7 @@ export async function createUser(/** @type {Object} */ data) {
 /*--------------------------
 |		PUT
 --------------------------*/
-export async function activateUser(/** @type {Object} */ data) {
+export async function _activateUser(/** @type {Object} */ data) {
 	const url = `${API_URL}/user/activate`;
 
 	// We send the data to the server and get the response to display it
@@ -116,7 +116,7 @@ export async function activateUser(/** @type {Object} */ data) {
 /*--------------------------
 |		DELETE
 --------------------------*/
-export async function deleteUser(/** @type {Object} */ data) {
+export async function _deleteUser(/** @type {Object} */ data) {
 	const url = `${API_URL}/user/delete`;
 
 	const response = await fetch(url, {

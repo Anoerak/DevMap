@@ -7,7 +7,7 @@ use App\Repository\TechStackRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: TechStackRepository::class)]
-#[ApiResource]
+#[ApiResource(paginationEnabled: false)]
 class TechStack
 {
     #[ORM\Id]

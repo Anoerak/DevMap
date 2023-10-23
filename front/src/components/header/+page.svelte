@@ -1,7 +1,7 @@
 <script>
 	import { page } from '$app/stores';
 	import { afterUpdate, getContext } from 'svelte';
-	import Logo from '$lib/img/logo.webp';
+	import Logo from '$lib/img/logo2.webp';
 	import MenuSvg from '$lib/img/svg/menu.svg';
 	import Modal from '../modal/+page.svelte';
 	import RegisterForm from '../register_form/+page.svelte';
@@ -22,14 +22,14 @@
 	@import './_header.scss';
 </style>
 
-<header>
+<header id="header">
 	<div class="logo">
 		<a href="/">
 			<img src={Logo} alt="dark person icon behind a computer screen, a glove behind them.">
 		</a>
 	</div>
 
-	<nav>
+	<nav id="nav-container">
 		<ul>
 			<li>
 				<a href="/" class={pageTag === '/' ? 'active' : ''}>
@@ -49,8 +49,20 @@
 					Contact
 				</a>
 			</li>
-			<li>
+			<li class="responsive__register">
+				<div class="responsive__register__button">
+					<button 
+					on:click={
+						() => {
+							$store.modals.showModal = true;
+						}
+					}
+					>
+						Register
+					</button>
+				</div>
 			</li>
+		</ul>	
 	</nav>
 
 
@@ -62,7 +74,7 @@
 		<button 
 		on:click={
 			() => {
-				$store.showModal = true;
+				$store.modals.showModal = true;
 			}
 		}
 		>

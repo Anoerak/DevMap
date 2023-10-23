@@ -1,8 +1,10 @@
-dialog.dialog {
+@import './_modal_responsive.scss';
+
+dialog.dialog,
+dialog.popup__modal {
 	position: relative;
 	margin: auto;
-	max-width: 32rem;
-	min-width: 20rem;
+	max-width: 800px;
 	border-radius: 1rem;
 	border: none;
 	padding: 0;

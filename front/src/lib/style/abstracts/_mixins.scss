@@ -1,3 +1,75 @@
 @mixin box-shadow {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+@mixin responsive($breakpoint) {
+	@if($breakpoint ==mobile-portrait) {
+		@media screen and (orientation: portrait) and (max-width: 600px) {
+			@content;
+		}
+	}
+
+	@if($breakpoint ==mobile-landscape) {
+		@media screen and (orientation: landscape) and (max-width: 812px) {
+			@content;
+		}
+	}
+
+	@if($breakpoint ==tablet-portrait) {
+		@media screen and (orientation: portrait) and (min-width: 600px) and (max-width: 992px) {
+			@content;
+		}
+	}
+
+	@if($breakpoint ==tablet-landscape) {
+		@media screen and (orientation: landscape) and (min-width: 812px) and (max-width: 1080px) {
+			@content;
+		}
+	}
+
+	@if($breakpoint ==desktop) {
+		@media screen and (min-width: 1080px) and (max-width: 1250px) {
+			@content;
+		}
+	}
+}
+
+@mixin button__base($color, $background-color, $border-color) {
+	color: $color;
+
+	@if(type-of($background-color) !=string) {
+		background-color: $background-color;
+	}
+
+	@else {
+		background: $background-color;
+	}
+
+	border-color: $border-color;
+	padding: .5rem 1rem;
+	border-radius: .5rem;
+	transition: $default-transition;
+	text-decoration: none;
+	outline: none;
+	cursor: pointer;
+
+	// If background-color is a sting and include linear-gradient
+	@if(type-of($background-color) !=string) {
+		&:hover {
+			background-color: darken($background-color, 10%);
+		}
+
+		&:focus {
+			box-shadow: 0 0 0 0.2rem rgba($background-color, 0.5);
+		}
+
+		&:active {
+			background-color: darken($background-color, 20%);
+		}
+	}
+
+	&:disabled {
+		opacity: 0.5;
+		cursor: not-allowed;
+	}
+}

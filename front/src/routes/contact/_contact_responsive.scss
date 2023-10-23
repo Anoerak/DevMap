@@ -1,0 +1,17 @@
+@include responsive('mobile-portrait') {
+	section {
+		&#contact__container {
+			min-height: 100vh;
+			padding: 0;
+			margin: 0;
+		}
+	}
+}
+
+@include responsive('tablet-landscape') {
+	section {
+		&#contact__container {
+			min-height: 108vh;
+		}
+	}
+}

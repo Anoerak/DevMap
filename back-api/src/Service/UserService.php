@@ -5,7 +5,6 @@ namespace App\Service;
 use App\Entity\User;
 use App\Entity\UserDetail;
 use Doctrine\ORM\EntityManagerInterface;
-use PHPUnit\Util\Json;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -38,12 +37,12 @@ class UserService extends AbstractController
 		if ($user) {
 			$response = new JsonResponse([
 				'status' => 400,
-				'title' => 'Error',
+				'title' => 'Something went wrong..',
 				'message' => 'This email is already registered. Please try again with another email.'
 			]);
 
 			$response->headers->add([
-				'Content-Type' => 'text/plain',
+				'Content-Type' => 'application/json',
 				'Access-Control-Allow-Origin' => '*',
 			]);
 			$response->prepare($request);
@@ -88,12 +87,12 @@ class UserService extends AbstractController
 		if (!$user) {
 			$response = new JsonResponse([
 				'status' => 400,
-				'title' => 'Error',
+				'title' => 'Something went wrong..',
 				'message' => 'An error occurred while creating your account. Please try again.'
 			]);
 
 			$response->headers->add([
-				'Content-Type' => 'text/plain',
+				'Content-Type' => 'application/json',
 				'Access-Control-Allow-Origin' => '*',
 			]);
 			$response->prepare($request);
@@ -105,12 +104,12 @@ class UserService extends AbstractController
 		// We send a confirmation email to the user
 		$response = new JsonResponse([
 			'status' => 200,
-			'title' => 'Success',
-			'message' => 'Congratulations' . ' ' . $user->getUsername() . '!' . ' ' . 'Your account has been created successfully. Go check your email in order to activate your account.',
+			'title' => 'Congratulations' . ' ' . $user->getUsername() . '!',
+			'message' => 'Your account has been created successfully. Go check the footer in order to activate your account.',
 		]);
 
 		$response->headers->add([
-			'Content-Type' => 'text/plain',
+			'Content-Type' => 'application/json',
 			'Access-Control-Allow-Origin' => '*',
 		]);
 		$response->prepare($request);

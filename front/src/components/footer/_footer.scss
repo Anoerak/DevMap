@@ -1,71 +1,55 @@
-@import './_footer_responsive.scss';
+@import './footer_responsive';
 
 footer {
-	/*Display stuff*/
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
 	justify-content: space-around;
-	/*Positioning stuff*/
 	position: absolute;
-	/*Box model stuff*/
 	width: 100%;
 	height: 200px;
 	margin: 0;
 	padding-top: 1rem;
 	background-color: $color-secondary-light;
-	/*Typography stuff*/
 	color: $color-light;
 
 	&>*>h2 {
-		/*Box model stuff*/
 		margin-bottom: -0.25rem;
 		padding: 0 0.5rem;
 		border-bottom: solid 1px $color-light;
 		border-left: solid 1px $color-light;
-		/*Typography stuff*/
 		font-size: 1.5rem;
 		font-weight: 500;
 	}
 
 	.website {
-		/*Display stuff*/
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 
 		ul {
-			/*Box model stuff*/
 			margin: 0;
 			padding: 0;
-			/*Miscellaneous*/
 			list-style: none;
 
 			li {
-				/*Box model stuff*/
 				margin: 0.5rem 0;
 
 				&::before {
-					/*Display stuff*/
 					content: "";
-					/*Box model stuff*/
 					border-right: solid 1px $color-light;
 				}
 
 				a {
-					/*Typography stuff*/
 					font-size: 0.75rem;
 					font-weight: 500;
 					text-decoration: none;
 					color: $color-light;
-					/*Manipulations stuff*/
 					transition: all 0.3s ease-in-out;
 
 					&:hover {
-						/*Typography stuff*/
 						color: $color-secondary-dark;
-						/*Manipulations stuff*/
 						transform: scale(1.25);
 					}
 				}
@@ -74,16 +58,13 @@ footer {
 	}
 
 	.social {
-		/*Display stuff*/
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 
 		h2 {
-			/*Box model stuff*/
 			margin-bottom: -0.25rem;
-			/*Typography stuff*/
 			font-size: 1.5rem;
 			font-weight: 500;
 		}
@@ -142,80 +123,56 @@ footer {
 	}
 
 	.profile {
-		/*Display stuff*/
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 
 		h2 {
-			/*Box model stuff*/
 			margin-bottom: -0.25rem;
-			/*Typography stuff*/
 			font-size: 1.5rem;
 			font-weight: 500;
 		}
 
 		p {
-			/*Typography stuff*/
 			font-size: 0.75rem;
 			font-weight: 500;
 			margin-top: 1rem;
 
 			&.privacy__policy__link {
-				/*Typography stuff*/
 				font-size: 0.75rem;
 				font-weight: 300;
 
 				a {
-					/*Typography stuff*/
 					color: $color-secondary-dark;
 				}
 			}
 		}
 
-		.profile__input {
-			/*Box model stuff*/
-			margin: 1rem 0.5rem 0 0.5rem;
-			padding: 0.5rem 1rem;
-			border: none;
-			border-radius: 0.5rem;
-			/*Typography stuff*/
-			font-size: 0.75rem;
-			font-weight: 500;
+		form {
+			width: 100%;
 
-			:focus {
-				/*Box model stuff*/
-				outline: blue auto 1px;
-			}
-		}
-
-		.main__button {
-			/*Box model stuff*/
-			margin: 1rem 0.5rem 0 0.5rem;
-			padding: 0.5rem 1rem;
-			border: none;
-			border-radius: 0.5rem;
-			/*Typography stuff*/
-			font-size: 0.75rem;
-			font-weight: 500;
-			text-decoration: none;
-			color: $color-light;
-			/*Manipulations stuff*/
-			transition: all 0.3s ease-in-out;
-
-			&:hover {
-				/*Manipulations stuff*/
-				transform: scale(1.25);
-				filter: brightness(1.25);
+			.profile__input {
+				margin: 1rem 0.5rem 0 0.5rem;
+				padding: 0.5rem 1rem;
+				border: none;
+				border-radius: 0.5rem;
+				font-size: 0.75rem;
+				font-weight: 500;
+				width: 45%;
 			}
 
-			&.change__status {
-				background-color: $color-secondary-dark;
-			}
+			.main__button {
+				margin: 1rem 0.5rem 0 0.5rem;
+				font-size: 0.75rem;
 
-			&.delete__profile {
-				background-color: $color-danger;
+				&.change__status {
+					@include button__base($change-button-color, $change-button-background-color, $change-button-border-color);
+				}
+
+				&.delete__profile {
+					@include button__base($delete-button-color, $delete-button-background-color, $delete-button-border-color);
+				}
 			}
 		}
 	}

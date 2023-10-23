@@ -4,7 +4,7 @@ import {
 	OPENWEATHER_API_URL
 } from '../../../config/config.local.js';
 
-export function getCoord(/** @type {string} */ zip, /** @type {string} */ city) {
+export function _getCoord(/** @type {string} */ zip, /** @type {string} */ city) {
 	const url = `${LOCAL_DB_URL}${zip}&municipality=${city}&limit=1`;
 
 	const response = fetch(url)
@@ -23,7 +23,7 @@ export function getCoord(/** @type {string} */ zip, /** @type {string} */ city) 
 	return response;
 }
 
-export function getCoordByZipCountry(/** @type {string} */ zip, /** @type {string} */ country) {
+export function _getCoordByZipCountry(/** @type {string} */ zip, /** @type {string} */ country) {
 	const url = `${OPENWEATHER_API_URL}${zip},${country}&limit=1&appid=${OPENWEATHER_API_KEY}`;
 
 	const response = fetch(url)

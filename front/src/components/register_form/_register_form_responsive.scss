@@ -1,0 +1,9 @@
+@include responsive('mobile-portrait') {
+	#register-form {
+		fieldset {
+			.input__container {
+				width: 45%;
+			}
+		}
+	}
+}
