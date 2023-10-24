@@ -173,7 +173,7 @@
 
 	const geoList = async (/** @type {string} */ zip, /** @type {string} */ country) => {
 		const geoPromise = await _getCoordByZipCountry(zip, country);
-		if(geoPromise.error) {
+		if(geoPromise.cod == 404) {
 			const errorSpan = document.querySelector('.error');
 			// @ts-ignore
 			errorSpan.innerHTML = 'Zipcode not found, use the ISO alpha-2 zipcode please';
