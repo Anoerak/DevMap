@@ -169,7 +169,6 @@
 				return 0;
 			}
 		);
-		console.log(stack);
 	};
 
 	const geoList = async (/** @type {string} */ zip, /** @type {string} */ country) => {
@@ -321,9 +320,10 @@
 
 
 	<button 
+		id="confirm-registration"
 		type="submit"
 	>
-		Register
+		Confirm
 	</button>
 
 	<span class="error"></span>

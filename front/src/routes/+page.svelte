@@ -17,16 +17,11 @@
 	onMount(() => {
 		_getAllUsers()
 			.then((/** @type {{ features: any; }} */ user) => {
-
-				user.features.forEach((/** @type {{ properties: { active: boolean; }; }} */ element) => {
-					if (element.properties.active === true) {
-						store.update((/** @type {{ userCounter: number; dataset: { type: string; features: any[]; }; }} */ store) => {
-							store.userCounter = user.features.length;
-							return store;
-						});
-					}
+				store.update((/** @type {{ userCounter: number; dataset: { type: string; features: any[]; }; }} */ store) => {
+					store.dataset.features = [];
+					return store;
 				});
-				
+
 				user.features.forEach((/** @type {{ properties: { active: boolean; }; }} */ element) => {
 					store.update((/** @type {{ userCounter: number; dataset: { type: string; features: any[]; }; }} */ store) => {
 						store.dataset.features.push(element);

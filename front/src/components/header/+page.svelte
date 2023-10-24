@@ -51,12 +51,13 @@
 			</li>
 			<li class="responsive__register">
 				<div class="responsive__register__button">
-					<button 
-					on:click={
-						() => {
-							$store.modals.showModal = true;
+					<button
+						id="register-button"
+						on:click={
+							() => {
+								$store.modals.showModal = true;
+							}
 						}
-					}
 					>
 						Register
 					</button>

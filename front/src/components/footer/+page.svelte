@@ -35,7 +35,10 @@
 					popUpModal: boolean 
 				};  
 			}} */ store) => {
-				// We use param1 to define if we increment or decrement the userCounter
+				// We refresh the user counter
+				store.userCounter = store.dataset.features.filter((/** @type {{ properties: { active: boolean; }; }} */ element) => {
+					return element.properties.active === true;
+				}).length;
 				store.apiResponse.status = res.status;
 				store.apiResponse.title = res.title;
 				store.apiResponse.message = res.message;
@@ -51,33 +54,35 @@
 		const response = await _activateUser({
 			email: email,
 		});
-		if(response.message === 'Your account has been activated.') {
-			updateStoreWithResponse(response)
-			// We change the status of the user into the store
-			store.update((/** @type {{ 
-				userCounter: number; 
-				dataset: { 
-					type: string; 
-					features: any[]; 
-				}; 
-				lastUser: {
-					lat: number; 
-					lng: number; 
-					zoom: number 
-				}; 
-				apiResponse: {
-					title: string; 
-					message: string; 
-					status: number
-				}; 
-				modals: { 
-					showModal: boolean; 
-					popUpModal: boolean 
-				};  
-			}} */ store) => {	
-				store.userCounter++;			
+		// We change the status of the user into the store
+		store.update((/** @type {{ 
+			userCounter: number; 
+			dataset: { 
+				type: string; 
+				features: any[]; 
+			}; 
+			lastUser: {
+				lat: number; 
+				lng: number; 
+				zoom: number 
+			}; 
+			apiResponse: {
+				title: string; 
+				message: string; 
+				status: number
+			}; 
+			modals: { 
+				showModal: boolean; 
+				popUpModal: boolean 
+			};  
+		}} */ store) => {	
+			if(response.message === 'Your account has been activated.') {
+				// console.log(store.dataset.features);
 				store.dataset.features.forEach((/** @type {{ properties: { email: string; active: boolean; }; geometry: { coordinates: any[] }; }} */ element) => {
 					if (element.properties.email === email) {
+						console.log(element.properties.email);
+						console.log(email);
+						console.log(element.properties.active);
 						element.properties.active = true;
 						// We set the last user coordinates
 						store.lastUser.lat = element.geometry.coordinates[1];
@@ -85,33 +90,7 @@
 						store.lastUser.zoom = 14;
 					}
 				});
-				return store;
-			});
-		} else if (response.message === 'Your account has been deactivated.') {
-				updateStoreWithResponse(response)
-			// We change the status of the user into the store
-			store.update((/** @type {{ 
-				userCounter: number; 
-				dataset: { 
-					type: string; 
-					features: any[]; 
-				}; 
-				lastUser: {
-					lat: number; 
-					lng: number; 
-					zoom: number 
-				}; 
-				apiResponse: {
-					title: string; 
-					message: string; 
-					status: number
-				}; 
-				modals: { 
-					showModal: boolean; 
-					popUpModal: boolean 
-				};  
-			}} */ store) => {
-				store.userCounter--;
+			} else if (response.message === 'Your account has been deactivated.') {
 				store.dataset.features.forEach((/** @type {{ properties: { email: string; active: boolean; }; geometry: { coordinates: any[] }; }} */ element) => {
 					if (element.properties.email === email) {
 						element.properties.active = false;
@@ -121,11 +100,10 @@
 						store.lastUser.zoom = 5;
 					}
 				});
-				return store;
-			});
-		} else {
-			updateStoreWithResponse(response)
-		}
+			};
+			updateStoreWithResponse(response);
+			return store;
+		});
 	};
 
 	const userDeletion = async () => {
@@ -286,12 +264,14 @@
 		>
 			<input type="text" id="email" name="email" placeholder="Your email" class="profile__input">
 			<input 
+				id="user-activation"
 				type="submit" 
 				value="Change Status" 
 				class="main__button change__status"
 				on:click={userActivation}
 			>
-			<input 
+			<input
+				id="user-deletion"
 				type="submit" 
 				value="Delete Profile" 
 				class="main__button delete__profile"

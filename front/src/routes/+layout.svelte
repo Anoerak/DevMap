@@ -2,6 +2,7 @@
 	/*----------------------
 	|	IMPORTS
 	----------------------*/
+	import '@fortawesome/fontawesome-free/css/all.min.css';
 	import Header from '../components/header/+page.svelte';
 	import Footer from '../components/footer/+page.svelte';
 	import { setContext } from 'svelte';
@@ -38,6 +39,7 @@
 		store.mapboxDataset.features = store.dataset.features.filter((/** @type {{ properties: { active: boolean; }; }} */ element) => {
 			return element.properties.active === true;
 		});
+		store.userCounter = store.mapboxDataset.features.length !== 0 ? store.mapboxDataset.features.length : 0;
 	});
 
 	// We set a Context to share the store with the children
@@ -59,14 +61,16 @@
 		open={$store.modals.popUpModal}
 		on:click|self={() => $store.modals.popUpModal = false}
 	>
-	<div>
-		<h1>{$store.apiResponse.title}</h1>
-		<p>{$store.apiResponse.message}</p>
-	</div>
-	<button
-	class="close__button"
-		on:click={() => $store.modals.popUpModal = false}
-	>x</button>
+		<div>
+			<h1>{$store.apiResponse.title}</h1>
+			<p>{$store.apiResponse.message}</p>
+		</div>
+		<button
+			class="close__button"
+			on:click={() => $store.modals.popUpModal = false}
+		>
+		x
+		</button>
 	</dialog>
 	<slot>
 	</slot>
