@@ -20,7 +20,7 @@ a map.
 
 ## Stack
 
-### Front-end
+### Front-end stack
 
 -   Svelte
 -   Sass
@@ -28,7 +28,7 @@ a map.
 -   Leaflet
 -   Json-server (for testing purposes)
 
-### Back-end
+### Back-end stack
 
 -   Symfony
 -   Doctrine
@@ -36,7 +36,67 @@ a map.
 
 ## Installation
 
+### Front-end install
+
+```bash
+cd front
+npm install
+```
+
+### Back-end install
+
+```bash
+cd back-api
+composer install
+```
+
+## Configuration
+
+### Front-end config
+
+```bash
+cd front
+cd src/config/config.js
+```
+
+### Back-end config
+
+```bash
+cd back-api
+cd .env
+# Configure your database connection
+# Configure your mailer connection
+```
+
+```bash
+# Create database
+php bin/console doctrine:database:create
+
+# Create tables
+php bin/console doctrine:migrations:migrate
+
+# Load fixtures
+php bin/console doctrine:fixtures:load
+
+# Start server
+symfony serve
+```
+
 ## Usage
+
+### Front-end usage
+
+```bash
+cd front
+npm run dev -- --open
+```
+
+### Back-end usage
+
+```bash
+cd back-api
+symfony serve
+```
 
 ## License
 
